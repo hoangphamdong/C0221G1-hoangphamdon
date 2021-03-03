@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a433bde-4e5d-47b6-97a8-2ae9229c106b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/1346967.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tao_CV.html" beforeDir="false" afterPath="$PROJECT_DIR$/Tao_CV.html" afterDir="false" />
     </list>
@@ -31,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../bai5_HTML form/thuc_hanh/tao_form_co_ban" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -56,6 +57,9 @@
       <updated>1614667116304</updated>
       <workItem from="1614667117477" duration="1788000" />
       <workItem from="1614669367311" duration="1170000" />
+      <workItem from="1614670653032" duration="66000" />
+      <workItem from="1614671358067" duration="898000" />
+      <workItem from="1614749444626" duration="27000" />
     </task>
     <servers />
   </component>
@@ -63,6 +67,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1614749469680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1614749469680" />
     <state x="500" y="124" key="RollbackChangesDialog" timestamp="1614669718965">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
