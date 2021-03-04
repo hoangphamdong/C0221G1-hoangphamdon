@@ -1,0 +1,4 @@
+function dong() {
+    alert("hello")
+
+}
