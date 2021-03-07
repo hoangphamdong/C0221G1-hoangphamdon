@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Amount</label>
+<label>From Curency</label>
+<label>To Curency</label><br>
+<input type="number" id="Am">
+<select id="Fc">
+    <option value="1">VND</option>
+    <option value="23000">USA</option>
+</select>
+<select id="Tc">
+    <option value="1">VND</option>
+    <option value="23000">USA</option>
+</select>
+<button type="button"onclick="cd()"></button>
+<script>
+    function cd() {
+        let am=parseInt(document.getElementById('Am').value);
+        let fc=parseInt(document.getElementById('Fc').value);
+        let tc=parseInt(document.getElementById('Tc').value);
+        let kq=am*fc/tc;
+        document.write('kết quả là :='+kq)
+
+    }
+</script>
+
+</body>
+</html>

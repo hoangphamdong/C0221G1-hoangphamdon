@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label style="margin-left: 20px"> Amount</label>
+    <label style="margin-left: 150px"> From Currency</label>
+    <label style="margin-left: 40px"> To Currency</label><br>
+
+    <input type="number" id="Am">
+
+    <select style="margin-left: 50px"id="FC">
+        <option value="1" style="size: 15px">VietNam</option>
+        <option value="23000">USA</option>
+    </select>
+
+    <select style="margin-left:75px"id="TC">
+        <option value="23000">USA</option>
+        <option value="1">VND</option>
+    </select>
+
+    <button type="button" style="margin-left: 25px;background-color: blue"onclick="cd()">Convert</button>
+</form>
+<script>
+    function cd() {
+        let am=parseInt(document.getElementById('Am').value);
+        let fc=parseInt(document.getElementById('FC').value);
+        let tc=parseInt(document.getElementById('TC').value);
+        let KQ=am*fc/tc;
+        document.write('KQ=' +KQ);
+    }
+
+</script>
+</body>
+</html>

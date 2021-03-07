@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number"id="nhapso1">
+<input type="number"id="nhapso2">
+<button type="button"onclick="Ad()">Addition(+)</button>
+<button type="button"onclick="Su()">Subtraction(-)</button>
+<button type="button"onclick="Ml()">Multiplication(x)</button>
+<button type="button"onclick="Dv()">Division(/)</button>
+</body>
+<script>
+    function Ad() {
+            let numm1 =parseInt(document.getElementById("nhapso1").value);
+            let numm2 =parseInt(document.getElementById("nhapso2").value);
+        let cong =numm1+numm2;
+        alert("kết quả :="+cong)
+
+    }
+    function Su() {
+        let numm1 =parseInt(document.getElementById("nhapso1").value);
+        let numm2 =parseInt(document.getElementById("nhapso2").value);
+        let tru= numm1-numm2;
+        alert("kết quả :="+tru)
+
+    }
+    function Ml() {
+        let numm1 =parseInt(document.getElementById("nhapso1").value);
+        let numm2 =parseInt(document.getElementById("nhapso2").value);
+        let nhan= numm1*numm2;
+        alert("kết quả :="+nhan)
+    }
+    function Dv() {
+        let numm1 =parseInt(document.getElementById("nhapso1").value);
+        let numm2 =parseInt(document.getElementById("nhapso2").value);
+        let chia= numm1/numm2;
+        alert("kết quả :="+chia)
+    }
+</script>
+</html>
