@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6187775-8b41-49b1-b0b5-ae78c024a966" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../bai_8_cau_tru_diêu_kien/thuc_hanh/Kiem_tra_nam_nhuan/kiem_tra_nam_nhuan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_8_cau_tru_diêu_kien/thuc_hanh/Luyen_tap_toan_tu_ba_ngoi/toan_tu_ba_ngoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_8_cau_tru_diêu_kien/thuc_hanh/luyen_tap_voi_cau_truc_if_else/luye_tap_if_else.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_8_cau_tru_diêu_kien/thuc_hanh/luyen_tap_voi_cau_truc_if_else_if/luyen_tap_if_else_if.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../bai_8_cau_tru_diêu_kien/thuc_hanh/luyen_tap_voi_cau_truc_switch_case/siwtch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cau_lenh_switch_case.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tinh_chi_so_can_nang_cua_co_the/tinh_chi_so_can_nang_cua_co_the.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../bai7_bieen_kieu_du_lieu_toan_tu/bai_tap/ung_dung_may_tinh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../bai7_bieen_kieu_du_lieu_toan_tu/bai_tap/ung_dung_may_tinh/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="1pT22Ue6VBJUvZaleTUf91JGo5O" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../may_tinh_don_gian" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RunManager">
+    <configuration name="cau_lenh_switch_case.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/cau_lenh_switch-case/cau_lenh_switch_case.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.cau_lenh_switch_case.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6187775-8b41-49b1-b0b5-ae78c024a966" name="Default Changelist" comment="" />
+      <created>1615192552043</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615192552043</updated>
+      <workItem from="1615192553122" duration="3095000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="594" y="199" key="FileChooserDialogImpl" timestamp="1615196048051">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="594" y="199" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615196048051" />
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.0.center" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.0.left" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.0.right" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1615196049318">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1615196049318" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.2.bottom" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.2.center" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.2.left" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.2.right" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.3.bottom" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.bottom/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.3.center" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.center/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.3.left" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.left/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+    <state width="1515" height="261" key="GridCell.Tab.3.right" timestamp="1615196049319">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1615196049319" />
+  </component>
+</project>
