@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Tính diện tích hình tam giac vuông</h1>
+<label>nhập cạnh góc vuông</label><br>
+<input type="number"id="nhap1"><br>
+<label>nhập cạnh góc vuông</label><br>
+<input type="number"id="nhap2"><br>
+<input type="button"onclick="tinh()"value="tính"><br>
+<script>
+    function tinh() {
+        let a=parseInt(document.getElementById('nhap1').value);
+        let b=parseInt(document.getElementById('nhap2').value);
+        alert('diện tích tam giác vuông là '+0.5*a*b)
+
+    }
+</script>
+</body>
+</html>

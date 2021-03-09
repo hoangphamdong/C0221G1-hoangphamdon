@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Giải phương trình bậc nhất</h1>
+<p>ax+b=o</p>
+<form>
+    <input type="number" id="a"><br>
+    <input type="number" id="b"><br>
+    <input type="button" onclick="tinh()" value="Tìm x">
+</form>
+
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById('a').value);
+        let b = parseInt(document.getElementById('b').value);
+        // if (a==0&&b==0){
+        //     alert('vô số nghiệm')
+        // }else if (a=0&&b!=0) {
+        //     alert('vô nghiệm')
+        // }else if (a!=0&&b==0){
+        //     alert("phương trình có một nghiệm bằng ")
+        // }else if(a>0&&b>0){
+        //     alert('phương trình có nghiệm '+ (-b/a))
+        // }
+        // else
+        //     alert("phương trình có nghiệm "+ (b/a))
+        //
+        // }
+        if (a == 0) {
+            if (b==0){
+                alert('phuong trinh vo so nghiem')
+            }
+            else {
+                alert('phuong trinh vo nghiem')
+            }
+        }
+        else {
+            if (b==0){
+                alert('phuong trinh co 1 nghiem = 0')
+            }
+            else {
+                alert(-b/a)
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

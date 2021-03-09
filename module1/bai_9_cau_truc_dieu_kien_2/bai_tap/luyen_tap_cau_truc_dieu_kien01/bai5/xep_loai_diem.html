@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number"id="nhapdiem">
+<input type="button"onclick="xeploai()"value="xếp loại">
+<script>
+    function xeploai() {
+        let a = parseInt(document.getElementById('nhapdiem').value);
+        if(a>=80&&a<=100){
+            alert('bạn được xếp hạng A')
+        }else if(a<80&&a>=70){
+                alert('bạn được xếp hạng B')
+        }else if(a>=60&&a<70){
+            alert('bạn được xếp hạng C')
+        }else if (a>=35&&a<60){
+            alert('bạn được xếp hạng D')
+        }else if(a>=0&&a<35){
+            alert('bạn được điểm E')
+        }else
+            alert('bạn nhập sai điểm')
+
+
+    }
+</script>
+</body>
+</html>

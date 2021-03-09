@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<h1>Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác</h1>
+<form>
+    <label>Nhập a</label>
+    <input type="number" id="nhapa"><br>
+    <label>Nhập b</label>
+    <input type="number" id="nhapb"><br>
+    <label>Nhập c</label>
+    <input type="number" id="nhapc"><br>
+    <input type="button" onclick="tinh()" value="Enter">
+</form>
+<script>
+    function tinh() {
+        let a = parseInt(document.getElementById("nhapa").value);
+        let b = parseInt(document.getElementById("nhapb").value);
+        let c = parseInt(document.getElementById("nhapc").value);
+        if ((a, b, c > 0) && (a + b > c) && (b + c > a) && (a + c > b)) {
+            alert('đây là 3 cạnh của 1 tam giác')
+        } else {
+            alert("đây không phải là 3 cạnh của một tam giác")
+        }
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Kiểm tra xem một số nhập vào có phải là tuổi của một người không</h1>
+<form>
+    <input type="number"id="tuoi">
+    <input type="button" onclick="tinh()" value="Enter">
+    <script>
+        function tinh() {
+            let old=parseInt(document.getElementById("tuoi").value);
+            if(0<old && old<120){
+                alert(+old+" đây là tuổi của một người ")
+            }
+            else {
+                alert(old+' đây không phải là tuổi của một người')
+            }
+        }
+    </script>
+</form>
+</body>
+</html>

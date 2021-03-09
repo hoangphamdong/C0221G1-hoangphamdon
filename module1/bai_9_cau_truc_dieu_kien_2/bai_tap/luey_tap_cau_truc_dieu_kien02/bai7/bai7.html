@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h1>Giải phương trình bật hai</h1>
+        <form>
+            <label>nhập a</label>
+            <input type="number"id="nhapa"><br>
+            <label>nhập b</label>
+    <input type="number"id="nhapb"><br>
+    <label>nhập c</label>
+    <input type="number"id="nhapc"><br>
+    <input type="button" onclick="tim()"value="tìm">
+</form>
+<script>
+    function tim() {
+        let A=parseInt(document.getElementById('nhapa').value);
+        let B=parseInt(document.getElementById('nhapb').value);
+        let C=parseInt(document.getElementById('nhapc').value);
+        let denta = B*B-4*A*C;
+        let x1=(-B/(2*A));
+        let x2=(-B+(Math.sqrt(denta)/(2*A)));
+        let x3=(-B-(Math.sqrt(denta)/(2*A)));
+
+        if (denta<0){
+            alert("phương trình vô nghiệm")
+        }else if(denta=0){
+            alert("phương trình có một nghiệm kép "+x1)
+        }
+        else {
+            alert("phương trình có hai nghiệm "+x1+x3)
+        }
+    }
+</script>
+</body>
+</html>

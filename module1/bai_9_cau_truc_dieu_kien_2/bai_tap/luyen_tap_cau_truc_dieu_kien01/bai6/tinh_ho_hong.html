@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Tính tiền hoa hồng</h1>
+<p>từ 0-200 ngàn đồng có phần trăm hoa hồng là 3%</p>
+<p>từ 200-500 ngàn đồng có phần trăm hoa hồng là 5%</p>
+<p>từ 500-700 ngàn đồng có phần trăm hoa hồng là 10%</p>
+<p>nếu trên 700 ngàn sẽ cộng cả 3</p>
+<input type="number"id="hoahong">
+<input type="button"value="tính"onclick="tinh()">
+<script>
+    function tinh() {
+        let money =parseInt(document.getElementById('hoahong').value)
+        if (money>0&&money<=200){
+            alert("tiền hoa hồng bạn nhận được là"+(money*0.3));
+        }else if ( money>200&&money<=500){
+            alert("tiền hoa hồng bạn nhận được là"+(money*0.5));
+        } else if (money>500&&money<=700){
+            alert("tiền hoa hồng bạn nhận đươkc là"+(money*0.1))
+        }else if (money>700){
+            alert('tiền hoa hồng bạn nhận được là'+(0.53+(money-500)*0.1))
+        }
+        else{
+            alert("bạn nhập chưa đúng")
+        }
+    }
+</script>
+</body>
+</html>

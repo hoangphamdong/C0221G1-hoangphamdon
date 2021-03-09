@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a978b833-fe44-421c-8097-759d8d9876ff" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../nhap_hai_so_a_b/Nhap_hai_so_a_b.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nhap_mot_so_nguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../nhap_tuoi/nhap_tuo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ung_dung_vui_DoYouLoveme/do_you_love_me.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../may_tinh_don_gian/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../may_tinh_don_gian/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectId" id="1pV7a6LjzzylFZFMp3ahX9YX78A" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../nhap_3_so_nguye" />
+  </component>
+  <component name="RunManager">
+    <configuration name="nhap_mot_so_nguyen.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/nhap_mot_so_nguyen/nhap_mot_so_nguyen.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.nhap_mot_so_nguyen.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a978b833-fe44-421c-8097-759d8d9876ff" name="Default Changelist" comment="" />
+      <created>1615256463739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615256463739</updated>
+      <workItem from="1615256464827" duration="1024000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="168" key="FileChooserDialogImpl" timestamp="1615257495008">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="168" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615257495008" />
+  </component>
+</project>

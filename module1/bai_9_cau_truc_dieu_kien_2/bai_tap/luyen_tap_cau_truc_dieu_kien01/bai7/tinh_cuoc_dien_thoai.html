@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+        let tax=25000;
+        let time=parseInt(prompt("nhập tổng thời gian cuộc gọi"))
+        if (time>0&&time<=50){
+            alert("số tiền bạn phải trả là "+(tax+time*600));
+        }else if(50<time&&time<200){
+            alert("số tiền bạn phải trả là "+(tax+50*600+(time-50)*400))
+        }else if (time>200){
+            alert("số tiền bạn phải trả là "+tax+50*600+(time-150)*200)
+        }
+        else
+            ('số tiền bạn phải trả là '+tax)
+
+
+</script>
+</body>
+</html>
