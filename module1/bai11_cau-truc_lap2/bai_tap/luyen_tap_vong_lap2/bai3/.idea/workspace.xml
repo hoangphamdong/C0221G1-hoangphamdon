@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d07c56b0-af99-465a-908b-4202ee47f4b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai2/bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai3/bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai4/bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai5/bai5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai6/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../luyen_tap_vong_lap1/bai7/bai7.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../bai1/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../hien_thi_cac_so_nguyen_to_dau_tien/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../hien_thi_cac_so_nguyen_to_dau_tien/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai3.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../bai13_mang2/bai_tap/luyen_tap_mang1" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,6 +61,9 @@
       <option name="presentableId" value="Default" />
       <updated>1615445593063</updated>
       <workItem from="1615445594184" duration="8615000" />
+      <workItem from="1615469869363" duration="1975000" />
+      <workItem from="1615519625664" duration="1730000" />
+      <workItem from="1615531126252" duration="2275000" />
     </task>
     <servers />
   </component>
@@ -74,6 +71,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="913" y="170" key="FileChooserDialogImpl" timestamp="1615534130405">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="913" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615534130405" />
     <state width="747" height="22" key="GridCell.Tab.0.bottom" timestamp="1615457734729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

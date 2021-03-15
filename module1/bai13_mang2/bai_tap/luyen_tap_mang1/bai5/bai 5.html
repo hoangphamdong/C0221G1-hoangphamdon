@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //  let nhap=parseInt(prompt("nhập giá trị của mảng"));
+    let arr = new Array(10);
+    for (let i = 0; i < 10; i++) {
+        arr[i] = parseInt(prompt("nhập giá trị mảng"))
+    }
+    let V = parseInt(prompt());
+    for (let i = 0; i < 10; i++) {
+        // arr[i]=parseInt(prompt("nhập giá trị mảng"))
+        if (V == arr[i]) {
+            alert(V + 'thuộc arr');
+            break;
+        } else if (V == arr.length)
+        {
+            alert(V + "không thuộc");
+            break;
+        }
+    }
+</script>
+</body>
+</html>

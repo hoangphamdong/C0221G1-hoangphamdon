@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let value=prompt("nhập từ cần tra");
+    // let EN=["One","Two","Three","For"];
+    // let VI=["một","hai","ba","bốn"];
+    // for (let i=0;i<EN.length;i++){
+    //     if (value==EN[i]){
+    //         alert(EN[i]+" tiếng việt là "+VI[i])
+    //         break;
+    //     }else if ( i==EN.length-1){
+    //         alert("không tìm thấy")
+    //
+    //     }
+    //
+    // }
+    let nhap=parseInt(prompt("nhập giá trị của mảng"));
+    let arr=new Array();
+    for (let i=0;i<nhap;i++){
+        arr[i]=parseInt(prompt('nhập các giá trị của mảng'));
+    }
+    arr.reverse()
+    alert(arr)
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap =parseInt(prompt('nhap so phan tu'));
+    let arr=new Array();
+    let max=0;
+    let tong=0;
+    let tb=0;
+    for (let i=0;i<nhap;i++){
+        arr[i]=parseInt(prompt('nhập giá tri'))
+        if (arr[i]>max){
+            max=arr[i];
+        }
+    tong=tong+arr[i];
+    // }tb=tong/arr.length;
+        tb=tong/nhap
+    alert("gia tri lon nhat"+max+"trung bình là"+tb)
+</script>
+</body>
+</html>

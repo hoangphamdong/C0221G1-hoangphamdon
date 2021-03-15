@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=["1","2","3","4","5","6","7","8","9","10"];
+    let nhap=prompt("nhập giá trị cần tìm");
+    let massege1="V is in the array"
+    let massege2="V is not in the array"
+    for (let i=1;i<=mang.length;i++){
+        if (nhap==mang[i]){
+            alert(massege1);
+        }else if (i==mang.length){
+            alert(massege2);
+        }
+    }
+</script>
+</body>
+</html>

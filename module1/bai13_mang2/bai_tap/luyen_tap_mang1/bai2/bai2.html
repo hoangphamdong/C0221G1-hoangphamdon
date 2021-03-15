@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = parseInt(prompt("Bạn muốn nhập bao nhiêu số: "));
+    let arr = new Array();
+    let max=0;
+    let vitri=0;
+    for (let i=0;i<nhap;i++){
+        arr[i]=parseInt(prompt("Nhập vào số:  "));
+        if(arr[i]>max){
+            max = arr[i];
+            vitri=i;
+        }
+    }
+    alert("Số lớn nhất là" +max +"Vị trí là: "+vitri)
+
+</script>
+</body>
+</html>
