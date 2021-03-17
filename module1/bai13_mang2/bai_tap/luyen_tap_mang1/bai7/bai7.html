@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang=new Array(10);
+    let V;
+    for (let i=0;i<mang.length;i++){
+        mang[i]=parseInt(prompt("nhập giá trị của mảng"));
+
+    }
+    V=parseInt(prompt("nhập giá trị bất kỳ"));
+    for(let i=0;i<mang.length;i++){
+        if(V==mang[i]){
+            alert("V thuộc mảng");
+            mang.splice(i,1)
+            i--;
+            mang.push(0)
+        }else if (i==mang.length-1){
+            alert("V không thuộc mảng")
+            break;
+        }
+
+    }
+    alert(mang)
+
+</script>
+</body>
+</html>

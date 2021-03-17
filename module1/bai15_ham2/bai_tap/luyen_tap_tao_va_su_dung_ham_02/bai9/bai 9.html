@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function check(mang){
+       let tong=0;
+       let check = false;
+        let nhap=prompt("nhập ký tự cần tìm");
+       for (let i=0;i<mang.length;i++){
+           if(nhap==mang[i]){
+               tong+=1;
+               check = true;
+           }
+       }
+       if (check){
+           return tong;
+       }else {
+           return -1;
+       }
+
+    }
+    let mang=["h","d","-","-"]
+    alert(check(mang))
+</script>
+</body>
+</html>

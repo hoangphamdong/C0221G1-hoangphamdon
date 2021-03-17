@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center style="margin-top: 150px">
+    <h1 style=" font-size: 50px">Type anthing slowly</h1>
+    <form name="fromId1" >
+        <textarea name="txt"  onkeydown="keyDown();"style="font-size: 50px; text-align: center ;width: 500px;height: 200px"></textarea>
+    </form>
+    <script>
+        let string = "AI THÔNG MINH HƠN TUI NỮA HÈ HÍ HÍ !!! ";
+        let  output = "";
+        function keyDown() {
+            let strCheck = document.fromId1.txt.value;
+            if (strCheck.length >0) {
+                for (let i = 0; i < strCheck.length; i++) {
+                    output = output + string[i];
+                    if (i == string.length) {
+                        document.fromId1.txt.value = "";
+                        output = "";
+                    }
+                }
+            }
+            document.fromId1.txt.value = output;
+            output = "";
+            setTimeout("keyDown()", 1);
+        }
+    </script>
+</center>
+</body>
+</html>

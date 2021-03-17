@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+  function check(star){
+      let arr1=["Polaris","Aldebaran","vega","Altair","Dubhe","regulus"];
+      let arr2=["Ursa Minor","Tarurus","Cygnus","lyra","Aquila","Ursa Major","leo"];
+      for (let i=0;i<arr1.length;i++){
+          if (star==arr1[i]){
+             return arr2[i]
+              break;
+          }else if(i == arr1.length-1){
+              if (star==arr1[i]){
+                  return arr2[i]
+                  break;
+              }else {
+                  return "không tìm thấy"
+              }
+
+          }
+
+      }
+  }
+  let name=prompt("nhập tên ngôi sao");
+  alert(check(name))
+</script>
+</body>
+</html>

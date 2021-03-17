@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let so = parseInt(prompt("Nhập bao nhiêu phần tử"))
+    // let mang = new Array();
+    // let dem = 0;
+    // let chuoi ='';
+    // for (let i = 0; i < so; i++) {
+    //     mang[i] = prompt("Nhập từng phần tử")
+    //     if (mang[i] >= 10) {
+    //         dem = dem + 1;
+    //         chuoi=chuoi+mang[i]
+    //     }
+    // }
+    // alert(dem)
+    // alert(chuoi)
+    let mang = new Array(10);
+    let dem=0;
+    let so = "";
+    for (let i = 0; i <10; i++) {
+        mang[i] = parseInt(prompt("nhập các số của bạn"))
+        if (mang[i] >= 10) {
+            dem =dem + 1;
+            so = so + mang[i]
+        }
+    }alert("tổng số lớn hơn 10 là: "+dem+"số");
+    alert("những số đó là "+so);
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyển đổi đơn vị</h1>
+<form>
+    <input id="meter"
+           placeholder="nhập độ dài mét"
+           oninput="meterToFoot(this.value)"
+           onchange="meterToFoot(this.value)">
+    <P>foot:<span id="outputFoot"></span></P>
+
+    <input id="foot"
+           placeholder="nhập độ dài foot"
+           oninput="footToMeter(this.value)"
+           onchange="footToMeter(this.value)">
+    <P>Meter:<span id="outputMeter"></span></P>
+</form>
+<script>
+    function meterToFoot(foot){
+        foot=parseFloat(foot);
+        document.getElementById("outputFoot").innerHTML=(foot*0.305);
+    }
+    function footToMeter(meter){
+        meter=parseFloat(meter);
+        document.getElementById("outputMeter").innerHTML=(meter*3.279);
+    }
+</script>
+</body>
+</html>

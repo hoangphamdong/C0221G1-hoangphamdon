@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let td=prompt('nhập từ cần tìm');
+    // let EN=["one","two","three"];
+    // let VI=["một","hai","ba"];
+    // let check=false;
+    // for (let i=0;i<EN.length;i++){
+    //     if (EN[i]==td){
+    //         check=true
+    //         break;
+    //     }
+    //
+    // }
+    // if(check){
+    //     alert('từ điển'+td+"la:"+VI[EN.indexOf(td)]);
+    // }else {
+    //     alert('khong tim thay')
+    // }
+    let value = prompt("nhập từ cần tra");
+    let EN = ["One", "Two", "Three", "For"];
+    let VI = ["một", "hai", "ba", "bốn"];
+    for (let i = 0; i < EN.length; i++) {
+        if (value == EN[i]) {
+            alert(EN[i] + " tiếng việt là " + VI[i])
+            break;
+        } else if (i == (EN.length - 1)) {
+            alert("không tìm thấy")
+
+        }
+    }
+
+</script>
+</body>
+</html>

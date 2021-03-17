@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function factorial(num){
+        let kq=1;
+        if (num==0){
+            kq = 1;
+        }
+        else {
+            for (let i=1;i<=num;i++){
+                kq*=i;
+            }
+        }return "lũy thừa của "+num+"là "+kq;
+    }
+    let nhap=parseInt(prompt("nhập số bạn cần tính"));
+    alert(factorial(nhap))
+</script>
+</body>
+</html>
