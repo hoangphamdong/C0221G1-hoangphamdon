@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(Celsius) {
+            this.Celsius=Celsius;
+        }
+        getCelsius(){
+            return this.Celsius;
+        }
+        setCelsius(Celsius){
+            this.Celsius=Celsius;
+        }
+
+        getCelsiusToFahrem(){
+            return ((this.Celsius*1.8)+32);
+
+        }getCelsiusToKenvin(){
+            return (this.Celsius+273)
+        }
+        
+    }
+    let tenp = new Temperature()
+    tenp.setCelsius(25)
+    let c=tenp.getCelsius();
+    let f=tenp.getCelsiusToFahrem();
+    let kv=tenp.getCelsiusToKenvin()
+
+    alert("Fahrem : " +f+" kenvin : "+kv);
+
+</script>
+</body>
+</html>

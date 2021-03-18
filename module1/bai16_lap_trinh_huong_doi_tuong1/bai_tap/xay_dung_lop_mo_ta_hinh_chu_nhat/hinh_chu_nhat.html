@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>width</label>
+        <input type="number" id="width" placeholder="nhập chiều rộng"><br><br>
+        <label>heith</label>
+        <input type="number" id="heith" placeholder="nhập chiều dài">
+    </p>
+    <input type="button" value="Enter" onclick="enter()">
+    <p>result :<span id="display"></span></p>
+
+</form>
+<canvas id="myCanvas" width="200" height="100" style="border: 1px"></canvas>
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getWidth() {
+            return parseInt(this.width);
+        }
+
+        setWidth(width) {
+            this.width = width;
+        }
+
+        getHeight() {
+            return parseInt(this.height);
+        }
+
+        setHeight(height) {
+            this.height = height;
+        }
+
+        getArea() {
+            return parseInt(this.width * this.height);
+        }
+
+        setArea() {
+            this.getArea();
+        }
+
+        getPerimeter() {
+            return parseInt((this.height + this.width) * 2)
+        }
+
+        setPerimeter() {
+            this.getPerimeter();
+        }
+    }
+
+    function enter(kq) {
+        let w = parseInt(document.getElementById("width").value);
+        let h = parseInt(document.getElementById("heith").value);
+        let s = new Rectangle(w, h);
+        let p = s.getPerimeter();
+        let a = s.getArea();
+        // alert('chu vi: ' + p + ' ; Diện tích: ' + a);
+
+        document.getElementById("display").innerHTML="chu vi " +p + " diện tích "+a
+
+
+
+    // s.setWidth(200);
+    // s.setHeight(200);
+    // s.setArea();
+    // s.setPerimeter();
+    // let width=s.getWidth();
+    // let height=s.getHeight();
+    // let area=s.getArea();
+    // let perimeter=s.getPerimeter()
+
+    // document.write("width: "+width+" height: "+height+" area: "+area+" perimeter "+perimeter)
+    let c=document.getElementById("myCanvas");
+    let ctx =c.getContext("2d");
+    ctx.fillRect(100,20,w,h)
+    // function enter(){
+
+    }
+</script>
+</body>
+</html>
