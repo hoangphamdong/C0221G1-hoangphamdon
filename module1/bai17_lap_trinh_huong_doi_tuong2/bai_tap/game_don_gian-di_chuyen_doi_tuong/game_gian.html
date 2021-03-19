@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="game"></div>
+<script src="script.js"></script>
+<script>
+    function Hero(image, top, left, size,speed){
+        this.image = image;
+        this.top = top;
+        this.left = left;
+        this.size = size;
+
+        this.getHeroElement = function(){
+            return '<img src="pikachu.png" width="'+ this.size + '"' +' height="'+ this.size + '"' + ' src="' + this.image +'"' + ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+        }
+
+        this.moveRight = function(){
+            this.left += 20;
+            console.log('ok: ' + this.left);
+        }
+
+    }
+
+
+    var hero = new Hero('', 20, 30, 200);
+    let speed = 600 - prompt(" toc do 1-3")*200
+    function start(){
+        if(hero.left < window.innerWidth - hero.size){
+            hero.moveRight();
+        }
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, speed)
+    }
+
+    start();
+
+</script>
+</body>
+</html>
