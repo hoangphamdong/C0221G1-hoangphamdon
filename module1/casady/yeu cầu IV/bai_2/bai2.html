@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=prompt("nhập chuổi");
+    function kiemTra(){
+        let mang=[];
+        let sum=0;
+        mang=nhap.split('');
+        let result=[];
+        for(let i=0;i<mang.length;i++){
+            if(result.includes(mang[i])===false){
+                result.push(mang[i]);
+                sum +=1;
+            }
+        }alert(sum)
+    }
+    kiemTra();
+</script>
+</body>
+</html>

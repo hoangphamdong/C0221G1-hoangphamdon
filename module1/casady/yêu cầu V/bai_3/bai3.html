@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("nhập chiều dài của mảng"));
+    let n = parseInt(prompt("nhập chiều dài của mảng con"));
+    let mang = new Array()
+    for (let i = 0; i < m; i++) {
+        mang[i] = new Array();
+        for (let j = 0; j < n; j++) {
+            mang[i][j] = prompt("nhập [" + i + "]" + "[" + j + "]")
+                document.write("["+mang[i] [j]+"]")
+        }document.write("<br>");
+    }
+
+    function timGiaTriLonNhat(){
+       let max=mang[0][0];
+            for (let i=0;i<mang.length;i++){
+                for (let j=0;j<mang[i].length;j++){
+                    if(mang[i][j]>max){
+                        max = mang[i][j];
+                    }
+                }
+            }document.write("đây là số lớn nhât"+max)
+    }
+    timGiaTriLonNhat(mang)
+</script>
+</body>
+</html>

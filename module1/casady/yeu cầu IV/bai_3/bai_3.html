@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // let a="aabcc";
+  // let b="adcaa";
+  // let tong=0;
+  // let c=[];
+  // for (let i=0;i<b.length;i++){
+  //     if(a.includes(b[i])===false){
+  //
+  //         c.push(b[i]);
+  //
+  //     }
+  // }alert(c.length)
+  // let a="aabcc";
+  // a=a.split('')
+  // let b="adcaa";
+  // b=b.split('')
+  // let tong=0;
+  // let c=[];
+  // for (let i=0;i<a.length;i++){
+  //     if(b.includes(a[i])){
+  //        tong++;
+  //        b.splice(b.indexOf(a[i]),1);
+  //
+  //     }
+  // }alert(tong)
+
+  let a="aabcc".split('');
+  let b="adcaa".split('');
+  let c=[];
+  for (let i=0;i<b.length;i++){
+      for (let j=0;j<a.length;j++){
+          if(b[i]==a[j]){
+              c.push(b[i]);
+              a.splice(j,1);
+              break;
+          }
+      }
+  }alert(c)
+</script>
+</body>
+</html>

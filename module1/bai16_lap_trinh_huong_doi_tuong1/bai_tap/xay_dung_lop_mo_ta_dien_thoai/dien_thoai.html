@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <label>SamSung</label>
+    <input type="text" id="samSung" style="height: 50px;width: 200px;" placeholder=" Soạn Tin Nhắn">
+    <input type="button" value="Send" onclick="send('samSung')">
+    <input type="button" value="Show" onclick="show('samSung')">
+    <input type="button" value="On/Off" onclick="onOFF('samSung')">
+</div><br>
+<div>
+    <label>Nokia</label>
+    <input type="text" id="Nokia" style="height: 50px;width: 200px;" placeholder=" Soạn Tin Nhắn">
+    <input type="button" value="Send" onclick="send('nokia')">
+    <input type="button" value="Show" onclick="show('nokia')">
+    <input type="button" value="On/Off" onclick="onOFF('nokia')">
+</div>
+<script>
+    class Mobile {
+        constructor() {
+            this.stattus = "";
+            this.battery = 10;
+            this.message = "";
+            this.inbox = "";
+            this.outbox = "";
+
+        }
+
+        turnOn_TurnOFF() {
+            if (this.stattus == "On") {
+                alert("điện Thoại đang Bật");
+            } else {
+                alert("điện thoại đang Tắt");
+            }
+        }
+
+        checkStattus() {
+            return this.stattus
+        }
+
+
+        getStattus() {
+            return this.ckeckStattus()
+        }
+
+        charge() {
+            this.battery++
+        }
+
+        getCharge() {
+            return this.battery
+        }
+
+        soanTinNhan(soanTinNhan) {
+            this.message = soanTinNhan;
+
+        }
+
+        thuDen(thuDen) {
+            this.inbox = thuDen
+        }
+
+        guiTin(dt, message) {
+            this.soanTinNhan(message);
+            this.outbox = this.message;
+            dt.thuDen(this.outbox)
+        }
+
+        hienThiHopThuDen() {
+            return this.inbox
+        }
+
+        hienThiHopThuDi() {
+            return this.outbox
+        }
+
+
+    }
+    function send(name){
+        if (name=="samSung"){
+            let message=document.getElementById("samSung").value;
+            samSung.guiTin(nokia,message);
+            document.getElementById("Nokia").value="bạn có tin nhắn"
+        }
+    }
+
+    // let samSung=new Mobile();
+    // let nokia=new Mobile();
+    // samSung.guiTin(nokia,"heLoo");
+    // alert(samSung.hienThiHopThuDi())
+
+
+</script>
+</body>
+</html>

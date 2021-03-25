@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<table border="1">-->
+<!--    <tr>-->
+<!--        <th>STT</th>-->
+<!--        <th>ID</th>-->
+<!--        <th>Name</th>-->
+<!--        <th>Age</th>-->
+<!--        <th>Edit</th>-->
+<!--        <th>Delete</th>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>1</td>-->
+<!--        <td>1</td>-->
+<!--        <td>nguyễn Văn A</td>-->
+<!--        <td>18</td>-->
+<!--        <td><input type="button"id="Edit" value="Edit"></td>-->
+<!--        <td><input type="button"id="Delete" value="Delete"></td>-->
+<!--    </tr>-->
+<!--</table>-->
+<script>
+   class Student {
+        constructor(id,name,age) {
+            this.id=id;
+            this.name=name;
+            this.age=age;
+        }
+        getId(id){
+            return this.id;
+        }
+        setId(id){
+            this.id=id;
+        }
+        getName(name){
+            this.name=name;
+        }
+        setName(name){
+            this.name=name;
+        }
+        getAge(){
+            return this.age;
+        }
+        setAge(age){
+            this.age=age;
+        }
+        toString(){
+            return "1.id= "+this.id +"\n 2.name ="+this.name+"\n3.Age"+this.age
+        }
+
+   }
+   let listStudent=[];
+   let student1=new Student(1,"nguyễn Văn A",18);
+   let student2=new Student(2,"nguyễn Văn B",18);
+   let student2=new Student(3,"nguyễn Văn B",19);
+</script>
+</body>
+</html>

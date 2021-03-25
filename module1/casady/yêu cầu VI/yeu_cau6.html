@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sổ xố</title>
+</head>
+<body>
+<h2>Xổ số CodeGym</h2>
+<form>
+    <input type="number"style="width: 75px"id="1">
+    <input type="number"style="width: 75px"id="2">
+    <input type="number"style="width: 75px"id="3">
+    <input type="number"style="width: 75px"id="4">
+    <input type="number"style="width: 75px"id="5">
+    <input type="number"style="width: 75px"id="6">
+</form>
+<input type="button" value="Mua vé" onclick="muaVe()">
+<input type="button" value="Xem kết quả">
+<p id="hienthi"></p>
+
+<script>
+function muaVe(){
+    do {
+        let check=true;
+        let chon=prompt("chon giá trị")
+        switch (chon){
+            case "1":
+                tuNhap();
+            case "2":
+                ngauNhien();
+        }
+    }while (check)
+}
+function tuNhap(){
+    for (let i=1;i<7;i++)
+    nhap=prompt('nhập')
+    document.getElementById('i').value=nhap;
+
+}
+
+
+</script>
+</body>
+</html>

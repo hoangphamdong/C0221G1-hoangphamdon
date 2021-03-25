@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+        getEnergy(){
+            return this.energy
+        }
+
+    }
+
+    class FlashLamp {
+        constructor(trangThai, pin) {
+            this.trangThai = trangThai;
+            this.pin = pin.energy;
+        }
+
+        status() {
+            if(this.trangThai=false){
+                alert("đèn Tắt");
+                this.pin--
+            }else {
+                alert("đèn sáng");
+            }
+        }light(){
+            if(this.trangThai=false){
+                this.trangThai=true;
+            }else{
+                this.trangThai=false;
+            }
+        }
+
+    }
+    let nangLuong=new Battery(6);
+    alert(nangLuong.getEnergy())
+
+    let denPin=new FlashLamp(false,6)
+   denPin.status()
+    alert(denPin.status())
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.Weight=weight;
+        }
+        getApple(){
+            return this.Weight;
+        }
+        decrease(){
+            this.Weight--;
+        }
+
+        
+    }
+    class Human{
+        constructor(name,gather,weight) {
+            this.Name=name;
+            this.Gather=gather;
+            this.Weight=weight;
+        }
+        eat(apple){
+            if(apple.getApple()>0){
+                this.Weight+=1
+                apple.decrease();
+            }else {
+                alert("het tao")
+            }
+
+        }
+    }
+    class Adam extends Human{
+        constructor(name,gather,weight) {
+            super(name,gather,weight);
+        }
+        getAll(){
+            return this.Name+" "+this.Gather+" "+this.Weight;
+        }
+    }
+    class Eva extends Human{
+        constructor(name,gather,weight) {
+            super(name,gather,weight);
+        }
+    }
+    let a=new Adam("Adam","male",10);
+    let tao=new Apple(5);
+    a.eat(tao);
+    alert(a.getAll())
+    alert(tao.Weight)
+    for(let i=0;i<4;i++){
+        a.eat(tao)
+        alert(a.Weight)
+        alert(tao.Weight)
+    }
+
+</script>
+</body>
+</html>

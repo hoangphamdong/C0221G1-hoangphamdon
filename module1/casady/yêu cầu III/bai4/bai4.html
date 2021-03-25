@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=parseInt(prompt("nhập số bạn cần chuyển đổi"));
+    let so=[1,2,3,4,5,6,7,8,9];
+    let chu=["một","hai","ba","bốn","năm","sáu"];
+    for (let i=0;i<so.length;i++){
+        if(nhap==so[i]){
+            alert(chu[i])
+        }else if(nhap==so.length-1){
+            alert("không tìm thấy")
+        }
+    }
+</script>
+
+</body>
+</html>

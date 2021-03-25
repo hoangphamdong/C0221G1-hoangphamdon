@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập chiều dai của mảng"));
+    let b = parseInt(prompt("nhập chiều dai của mảng con"));
+    mang = new Array();
+    for (let i = 0; i < a; i++) {
+        mang[i] = new Array()
+        for (let j = 0; j < b; j++) {
+            mang[i][j] = prompt("nhập [" + i + "]" + "[" + j + "]")
+            document.write("["+""+mang[i] [j]  +"]")
+        }
+        document.write("<br>")
+
+    }
+
+    function isPrime(number) {
+        if (number < 2) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function inDaySoNguyenTo(){
+        let resut="";
+        for (let i=0;i<mang.length;i++){
+            for (let j=0;j<mang[i].length;j++){
+                if (isPrime(mang[i][j])){
+                    resut +=mang[i][j]+" ";
+                }
+            }
+        }document.write("Số nguyên tố của mảng là : "+resut)
+    }
+  inDaySoNguyenTo(mang)
+</script>
+</body>
+</html>

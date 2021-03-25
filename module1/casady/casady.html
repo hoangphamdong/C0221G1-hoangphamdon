@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <h3>tính thuế</h3>
+    <label>Nhập lương</label>
+    <input type="number" placeholder="nhập lương của bạn" id="luong">
+    <input type="button" value="tính" onclick="tinh()"><br><br>
+    <p>tiền thuế bạn phải trả là : <span id="thue"></span></p>
+    <P>số tiền còn dư là :<span id="conDu"></span></P><br>
+</div>
+<div>
+    <h3>kiểm tra nguyên âm</h3>
+    <label>nhập:</label>
+    <input type="text" placeholder="nhập từ bạn cần tra" id="tu">
+    <input type="button" value="kiểm tra" onclick="kiemTra()"><br>
+    <span id="hienThi"></span>
+</div>
+<br><br>
+
+<script>
+    function kiemTra() {
+        let tu = document.getElementById("tu").value;
+        switch (tu) {
+            case 'o':
+            case 'u':
+            case 'i':
+            case 'a':
+            case 'e':
+            case 'O':
+            case 'U':
+            case 'I':
+            case 'A':
+            case 'E':
+                text = "đây là một nguyên âm"
+                break;
+            default:
+                text = "đây là phụ âm"
+                break;
+        }
+        document.getElementById("hienThi").innerHTML = text
+    }
+
+    function tinh() {
+        let ht = parseInt(document.getElementById("luong").value);
+        if (ht < 7000000) {
+            document.getElementById("thue").innerHTML = ht * 0.05;
+            document.getElementById("conDu").innerHTML = ht -= ht * 0.05;
+        } else if (ht < 15000000) {
+            document.getElementById("thue").innerHTML = ht * 0.1;
+            document.getElementById("conDu").innerHTML = ht -= ht * 0.1;
+        } else if (ht > 15000000) {
+            document.getElementById("thue").innerHTML = ht * 0.2;
+            document.getElementById("conDu").innerHTML = ht -= ht * 0.2;
+        } else {
+            alert("bạn chưa nhập lương");
+        }
+
+    }
+
+    for (let i = 0; i < 4; i++) {
+        for (let j = 0; j < 5; j++) {
+            if ((j > 0 && j < 4) && (i > 0 && i < 3)) {
+                document.write("&nbsp&nbsp");
+            } else {
+                document.write("*");
+            }
+        }
+        document.write("<br>")
+    }
+    for (let i = 0; i < 7; i++) {
+        for (let j = 0; j < i - 1; j++) {
+            document.write("*")
+
+        }
+        document.write("<br>")
+    }
+    for (let i = 0; i < 7; i++) {
+        for (let j = 0; j < 7 - i; j++) {
+            document.write("&nbsp&nbsp")
+        }
+        for (let k = 0; k < 2 * i + 1; k++) {
+            document.write("*")
+        }
+        document.write(" <br>")
+
+    }
+    for (let i = 0; i < 7; i++) {
+        for (let j = 0; j < i - 1; j++) {
+            document.write("*")
+
+        }
+        document.write("<br>")
+    }
+
+</script>
+</body>
+</html>

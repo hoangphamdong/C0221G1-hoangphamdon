@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [2, 3, 6, 7 ];
+    let b = [4, 3, 5, 7];
+    let max = a[0] / b[0];
+    let index;
+    for (let i = 0; i < a.length; i++) {
+        if ((a[i] / b[i] )> max) {
+            max = (a[i] / b[i]);
+            index=i;
+
+        }
+    }
+    alert(a[index]+"/"+b[index]+"la phân số lớn nhất"+ " có chỉ số là:"+index);
+
+</script>
+</body>
+</html>

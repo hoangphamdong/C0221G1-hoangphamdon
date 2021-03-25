@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap=prompt("nhập chuổi");
+    function chuyenDoi(){
+       nhap= nhap.toLowerCase();
+       let mang=[];
+       mang=nhap.split(' ');
+       let result='';
+        for (let i = 0; i <mang.length ; i++) {
+            mang[i] =mang[i].charAt(0).toUpperCase()+mang[i].slice(1);
+
+        }result=mang.join(" ");
+        alert(result)
+    }chuyenDoi(nhap);
+
+</script>
+</body>
+</html>

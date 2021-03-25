@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    class Tivi {
+        constructor(kenh, amThanh, trangThai) {
+            this.kenh = kenh;
+            this.amThanh = amThanh;
+            this.trangThai = trangThai;
+        }
+
+        getHienThiKenh() {
+            return this.kenh
+        }
+
+        getAmThanh() {
+            return this.amThanh;
+        }
+
+        status() {
+            if (this.trangThai == "bật") {
+                alert('Tivi đang bật')
+            } else {
+                alert('Tivi đang tắt')
+            }
+        }
+
+        getIfo() {
+            return this.kenh + " " + this.amThanh + " " + this.trangThai
+        }
+
+        //
+
+
+    }
+
+    class Remote {
+        constructor() {
+        }
+        chuyenKenh(tivi){
+            tivi.kenh++
+        }
+        tangAmThanh(tivi){
+            tivi.amThanh += parseInt(prompt("Am luong"));
+        }
+
+    }
+    let remote = new Remote()
+    let tivi1 = new Tivi(5, 5, "bật")
+    let tivi2 = new Tivi(5, 5, "bật")
+    remote.chuyenKenh(tivi2)
+    remote.tangAmThanh(tivi1)
+    //tivi.tangAmThanh()
+    alert(tivi1.getAmThanh())
+    alert(tivi2.getHienThiKenh())
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let cot = parseInt(prompt("nhập số cột"));
+    let hang = parseInt(prompt("nhập số hàng"));
+    let mang = new Array();
+    let tong = 0;
+    for (let i = 0; i < hang; i++) {
+        mang.push([]);
+        for (let j = 0; j < cot; j++) {
+            mang[i].push(parseInt(prompt("nhập số "+'['+i+']'+'['+j+']')))
+            if (mang[i][j] % 2 == 0) {
+                tong += mang[i][j];
+
+            }
+        }
+    }
+
+
+    alert("tổng là : "+tong)
+</script>
+</body>
+</html>
