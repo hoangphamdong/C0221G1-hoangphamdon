@@ -23,6 +23,9 @@
 <!--        <td><input type="button"id="Delete" value="Delete"></td>-->
 <!--    </tr>-->
 <!--</table>-->
+
+<input type="button" value="Add new student"onclick="addNewStudent()">
+<p id="ketqua"></p>
 <script>
    class Student {
         constructor(id,name,age) {
@@ -37,7 +40,7 @@
             this.id=id;
         }
         getName(name){
-            this.name=name;
+            return this.name;
         }
         setName(name){
             this.name=name;
@@ -56,7 +59,71 @@
    let listStudent=[];
    let student1=new Student(1,"nguyễn Văn A",18);
    let student2=new Student(2,"nguyễn Văn B",18);
-   let student2=new Student(3,"nguyễn Văn B",19);
+   let student3=new Student(3,"nguyễn Văn c",19);
+   listStudent.push(student1,student2,student3);
+   display(listStudent)
+   function display(list){
+       let tableString='<table border="1">\n' +
+           '    <tr>\n' +
+           '        <th>STT</th>\n' +
+           '        <th>ID</th>\n' +
+           '        <th>Name</th>\n' +
+           '        <th>Age</th>\n' +
+           '        <th>Edit</th>\n' +
+           '        <th>Delete</th>\n' +
+           '    </tr>';
+       for (let i=0;i<list.length;i++){
+          tableString+='<tr>\n' +
+              '        <td>'+(i+1)+'</td>\n' +
+              '        <td>'+list[i].getId()+'</td>\n' +
+              '        <td>'+list[i].getName()+'</td>\n' +
+              '        <td>'+list[i].getAge()+'</td>\n' +
+              '        <td><input type="button"id="Edit" value="Edit" onclick="edit('+i+')"></td>\n' +
+              '        <td><input type="button"id="Delete" value="Delete"onclick="deleteProduct('+i+') "></td>\n' +
+              '    </tr>'
+       }
+       tableString+='</table>'
+       document.getElementById("ketqua").innerHTML=tableString;
+   }
+   function addNewStudent(){
+       let id=prompt("input id");
+       let name=prompt("input name");
+       let age=prompt("input age");
+       let student=new Student(id,name,age);
+       listStudent.push(student);
+       display(listStudent)
+   }
+   function edit(index){
+       let studentEdit=listStudent[index];
+       let check=true;
+       do {
+           let choose=prompt("chọn thuộc tính cần sửa\n"+studentEdit.toString()+"\n 4.Exit");
+           switch (choose){
+               case "1":
+                   let newID=prompt("Nhập vào id mới");
+                   studentEdit.setId(newID);
+                   break;
+               case "2":
+                   let newName=prompt("nhập vào tên mới");
+                   studentEdit.setName(newName);
+                   break
+               case "3":
+                    let newAge=prompt("nhập vào tuổi mới");
+                    studentEdit.setAge(newAge);
+                    break;
+               default:
+                   check=false;
+           }
+       }while (check);
+       display(listStudent)
+   }
+   function deleteProduct(index){
+       let comfirmDelete=confirm("ban có muốn xóa sinh viên "+listStudent[index].getName());
+       if (comfirmDelete){
+           listStudent.splice(index,1);
+       }
+       display(listStudent)
+   }
 </script>
 </body>
 </html>

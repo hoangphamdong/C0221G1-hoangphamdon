@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="ketqua"></p>
+
+
+<script>
+class Menu{
+    constructor(drinks,price,amount,total) {
+        this.drinks=drinks;
+        this.price=price;
+        this.amount=amount;
+        this.total=total;
+    }
+    getDrink(){
+        return this.drinks;
+    }
+    setDrinks(drinks){
+        this.drinks=drinks;
+    }
+    getPrice(){
+        return this.price;
+    }
+    setPrice(price){
+        this.price=price;
+    }
+    getAmount(){
+        return this.amount;
+    }
+    setAmount(amount){
+        this.amount=amount;
+    }
+    getTotal(){
+        return this.total;
+    }
+
+}
+let listDrink=[];
+do {
+    let list=prompt("Menu\n"+
+            "1.caffe\n"+
+            "2.water")
+    switch (list){
+        case "1":
+            let coffeAmount=parseInt(prompt("nhập số lương"));
+            let total=7000*coffeAmount;
+            alert(total)
+            let caffee=new Menu("cafe",7000,coffeAmount,total);
+            listDrink.push(caffee);
+            display(listDrink)
+            break;
+        case "2":
+            let waterAmount=parseInt(prompt("nhập số lương"))
+            let waterTotal=10000*waterAmount;
+            let water=new Menu("Water",6000,waterAmount,waterTotal)
+            listDrink.push(water);
+            display(listDrink)
+            break;
+    }
+    if (list == 7){
+        break;
+    }
+}while (true)
+function display(list){
+    let sum =0;
+    let tableString='<table border="1">\n' +
+        '    <tr>\n' +
+        '        <th>STT</th>\n' +
+        '        <th>Drinks</th>\n' +
+        '        <th>price</th>\n' +
+        '    </tr>\n';
+
+    for(let i=0;i<list.length;i++){
+        sum+=list[i].getTotal();
+        tableString+='    <tr>\n' +
+            '        <td>'+(i+1)+'</td>\n' +
+            '        <td>'+list[i].getDrink()+'</td>\n' +
+            '        <td>'+list[i].getTotal()+'</td>\n' +
+            '    </tr>';
+    }tableString+='\n' +
+        '    <tr>\n' +
+        '        <th >Total</th>\n' +
+        '        <td colspan="2">'+sum+'</td>\n' +
+        '    </tr>'
+    tableString+='</table>';
+    document.getElementById("ketqua").innerHTML=tableString
+}
+</script>
+</body>
+</html>
