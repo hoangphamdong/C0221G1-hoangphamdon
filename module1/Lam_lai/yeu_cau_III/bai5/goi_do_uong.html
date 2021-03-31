@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+
+<script>
+    let menu=
+        "1.cafe             price:10000\n " +
+        "2.cam vắt          price:15000\n "+
+        "3.nước ép cà chua  price:15000\n "+
+        "4.nước ép cà rốt   price:15000\n "+
+        "5.nước lọc         price:5000\n "+
+        "6.nước dừa         price:12000\n "+
+        "7.tính tiền \n "
+    let choose;
+    let total=0;
+    do {
+
+        choose=parseInt(prompt(menu));
+        let amount=0;
+        let price;
+        switch (choose) {
+            case 1:
+                price=10000;
+                break;
+            case 2:
+                price=15000;
+                break
+            case 3:
+                price=15000;
+                break;
+            case 4:
+                price=15000;
+                break;
+            case 5:
+                price=5000;
+                break;
+            case 6:
+                price=12000;
+                break;
+
+        }
+        if(choose==7){
+            break;
+        }
+        amount=parseInt(prompt("nhập số lượng"))
+        total+=price*amount;
+    }while (true)
+
+// function display(list){
+//     let tableString='<table border="1"px>\n' +
+//         '    <tr>\n' +
+//         '        <th>Drinks</th>\n' +
+//         '        <th>price</th>\n' +
+//         '        <th>amount</th>\n' +
+//         '        <th>total</th>\n' +
+//         '    </tr>';
+//     for (let i=0;i<list.length;i++){
+//         tableString+='<tr>\n' +
+//             '        <td></td>\n' +
+//             '        <td></td>\n' +
+//             '        <td></td>\n' +
+//             '        <td></td>\n' +
+//             '    </tr>';
+//     }
+//     tableString+='<tr>\n' +
+//         '        <th>total</th>\n' +
+//         '        <td colspan="3"></td>\n' +
+//         '    </tr>';
+//     tableString+='</table>'
+// }
+
+
+
+</script>
+</body>
+</html>

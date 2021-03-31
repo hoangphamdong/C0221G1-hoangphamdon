@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr=[];
+    let size=parseInt(prompt("nhập chiều dài của mảng"));
+
+    for (let i=0;i<size;i++){
+        arr.push(parseInt(prompt("nhập các phần tử của mảng")));
+    }
+    function isPrime(number) {
+        if(number<2){
+            return false;
+        }
+        for (let j = 2; j <= Math.sqrt(number); j++) {
+            if (number % j == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    function timSoNguyenTo(arr) {
+        let result=[];
+        for (let i = 1; i < arr.length; i++) {
+            if (isPrime(arr[i])) {
+                result.push(arr[i])
+            }
+        } return result;
+    }
+   alert("các số nguyên tố có trong mảng là : "+timSoNguyenTo(arr)) ;
+
+</script>
+</body>
+</html>

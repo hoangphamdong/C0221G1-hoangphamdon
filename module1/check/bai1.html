@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size=parseInt(prompt("nhập chiều dài của mảng"));
+    let arrA=[];
+    let arrB=[];
+    let arrC=[];
+    let sum=0;
+    let summ=0;
+
+    for (let i=0;i<size;i++){
+        arrA.push(parseInt(prompt("nhập các phần tử của mảng")));
+    }
+    for (let i=0;i<arrA.length;i++){
+        if(arrA[i]%2==0&&arrB.indexOf(arrA[i])==-1){
+            arrB.push(arrA[i])
+        }
+    }
+    for (let i=0;i<arrA.length;i++){
+        if(arrA[i]%2!=0&&arrC.indexOf(arrA[i])==-1){
+            arrC.push(arrA[i])
+        }
+    }
+    for (let i=0;i<arrB.length;i++){
+
+        sum+=arrB[i];
+    }
+    for (let i=0;i<arrC.length;i++){
+
+        summ+=arrC[i];
+    }
+
+    function tinh(a,b){
+        let kq=a-b
+        return kq;
+    }
+    alert("kết quả của hiệu của Tổng các số chẵn và Tổng các số lẻ "+tinh(sum,summ))
+</script>
+</body>
+</html>

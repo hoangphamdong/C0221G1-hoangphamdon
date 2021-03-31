@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let height = parseInt(prompt("input enter height"));
+    let wight = height * 2 - 1;
+    let space = "";
+    for (let i = 1; i <= height; i++) {
+        for (let j = 1; j <= wight / 2 - i; j++) {
+            space += "&ensp;";
+        }
+        for (let k = 1; k <= i * 2 - 1; k++) {
+            if(i===height){
+                space += "*";
+            }else if (k===1||k==i*2-1){
+                space+="*";
+            }else {
+                space+="&ensp;"
+            }
+
+        }
+        space += "<br>";
+    }
+document.write(space)
+</script>
+</body>
+</html>

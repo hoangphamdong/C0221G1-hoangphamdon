@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Moblie {
+        constructor(maDienThoai='',ten='',hangSanXuat='',gia=0) {
+            this.maDienThoai=maDienThoai;
+            this.ten=ten;
+            this.hangSanXuat=hangSanXuat;
+            this.gia=gia;
+        }
+        setMaDienThoai(maDienThoai){
+            this.maDienThoai=maDienThoai;
+        }
+        getMaDienThoai(){
+            return this.maDienThoai;
+        }
+        setTen(ten){
+            this.ten=ten;
+        }
+        getTen(){
+            return this.ten;
+        }setHangSanXuat(hangSanXuat){
+            this.hangSanXuat=hangSanXuat;
+        }
+        getHangSanXuat(){
+            return this.hangSanXuat;
+        }setGia(gia){
+            this.gia=gia;
+        }
+        getGia(){
+            return this.gia;
+        }
+        toString(){
+            return [this.hangSanXuat,this.ten,this.maDienThoai,this.gia];
+        }
+    }
+    let iphone12=new Moblie("mot","iphone","apple",2000000);
+    let samSungS21Ultra=new Moblie("hai","samSung","samSung",300000);
+
+</script>
+</body>
+</html>

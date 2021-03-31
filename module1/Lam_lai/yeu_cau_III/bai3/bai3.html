@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numerators = [];
+    let denominators = [];
+    let size = parseInt(prompt("nhập chiều dài của mảng"));
+    for (let i = 0; i < size; i++) {
+        numerators.push(parseInt(prompt("nhập giá trị của numerators")));
+        denominators.push(parseInt(prompt("nhập giá trị của denominators")));
+
+    }
+
+
+    function maxFraction(numerators, denominaors) {
+        let maxIndex = 0;
+        for (let i = 1; i < numerators.length; i++) {
+            if (numerators[maxIndex] / denominaors[maxIndex] < numerators[i] / denominaors[i]) {
+                maxIndex = i;
+            }
+        }
+
+        return maxIndex;
+
+    }
+
+    alert(maxFraction(numerators, denominators))
+</script>
+</body>
+</html>

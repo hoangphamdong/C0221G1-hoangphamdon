@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let chuoi=prompt("nhập chuổi");
+    mang1=[];
+    mang1=chuoi.split(' ');
+    mang2=[];
+    mang2=chuoi.toLowerCase().split('');
+    let sum=0;
+    function check(mang1,mang2) {
+
+        for(let i=0;i<mang1.length;i++){
+            for (let j=0;j<mang2;j++){
+
+                if(mang1[i]!=mang2[j]){
+                    sum+=1;
+                }else {
+                    alert("The Strings is not contain upper char")
+                }
+            }
+        }return sum;
+    }check(mang1,mang2);
+
+
+
+</script>
+</body>
+</html>

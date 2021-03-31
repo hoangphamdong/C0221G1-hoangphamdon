@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="salary" placeholder="input enter salary">
+<input type="button" onclick="enter()" value="Enter">
+<p>tax: <span id="tax"></span></p>
+<p>netSalary: <span id="netSalary"></span></p>
+<script>
+    //     let salary = parseInt(prompt("please input salary"));
+    //     let tax = 0;
+    //     let netSalary = 0;
+    //     if(salary>=15000000){
+    //         tax=20;
+    //     }else if(salary>=7000000){
+    //         tax=15;
+    //     }else {
+    //         tax=10;
+    //     }
+    // netSalary=salary-=salary*tax/100
+    //     alert("tax : "+tax+"\n"+"netSalary : "+netSalary)
+
+
+    function enter() {
+        let salary = parseInt(document.getElementById("salary").value);
+        let tax = 0;
+        let netSalary = 0;
+        if (salary >= 15000000) {
+            tax = 20;
+        } else if (salary >= 7000000) {
+            tax = 15;
+        } else {
+            tax = 10;
+        }
+        netSalary = salary -= salary * tax / 100
+        document.getElementById("tax").innerHTML = tax;
+        document.getElementById("netSalary").innerHTML = netSalary;
+    }
+
+
+</script>
+</body>
+</html>
