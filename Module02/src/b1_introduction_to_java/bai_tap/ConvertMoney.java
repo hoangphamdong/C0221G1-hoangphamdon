@@ -8,10 +8,10 @@ public class ConvertMoney {
     public static void main(String[] args) {
         final int RATE=23000;
         Scanner scanner =new Scanner(System.in);
-        System.out.println("Enter USA");
+        System.out.print("Enter USA:");
         int usa=scanner.nextInt();
         int VND=usa*RATE;
-        System.out.println("VND :");
-        System.out.println(VND);
+        System.out.print("VND :");
+        System.out.print(VND);
     }
 }
