@@ -1,7 +1,5 @@
 package b6_inheritanre.thuc_hanh;
 
-import b5_AccessModifier_staticMethod_staticProperty.bai_tap.Cricle.Cricle;
-
 public class Circle extends Shape {
     private double radius=1.0;
     public Circle(){
