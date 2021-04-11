@@ -2,9 +2,13 @@ package b7_abstractClass_interface.bai_tap.Colorable;
 
 public class Square extends Shape implements Colorable{
     private double side=1.0;
-    public Square(){}
 
+    public Square(){}
     public Square(double side) {
+        this.side = side;
+    }
+    public Square(String color, double side){
+        super(color);
         this.side = side;
     }
 
