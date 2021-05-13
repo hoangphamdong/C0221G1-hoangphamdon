@@ -1,5 +1,4 @@
 create database `databaseFurumaResort`;
-use `databaseFuramaResort`;
 create table hop_dong(
 id_hop_dong int,
 id_nhan_vien int,
