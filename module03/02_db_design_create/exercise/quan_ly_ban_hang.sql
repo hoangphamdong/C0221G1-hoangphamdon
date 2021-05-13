@@ -1,4 +1,4 @@
-create database `quan_ly_ban_hang`;
+create databasebo_phan `quan_ly_ban_hang`;
 use `quan_ly_ban_hang`;
 create table customer(
 customer_id int primary key auto_increment not null,
