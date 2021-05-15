@@ -42,8 +42,8 @@ insert into student (student_name,address,phone,`status`,class_id)
 value ('Hung', 'Ha Noi', '0912113113', 1, 1),
 ('Manh', 'HCM', '0123123123', 0, 2);
 
-insert into student (student_name,address,`status`,class_id)
-value ('Hung', 'Ha Noi',  1, 1);
+insert into student (student_name,address,phone,`status`,class_id)
+value ('Dong', 'Ha Noi', '0912113113', 1, 1);
 
 insert into `subject`(sub_name,credit,`status`)
 value('CF', 5, 1),
@@ -52,9 +52,11 @@ value('CF', 5, 1),
        ('RDBMS', 10, 1);
        
 insert into mark(sub_id,student_id,mark,exam_time)
-value(1, 1, 8, 1),
-       (1, 2, 10, 2),
-       (2, 1, 12, 1);
+values
+(1, 1, 8, 1),
+(2, 2, 10, 2),
+(3, 3, 12, 1);
+       
 
 -- Hiển thị tất cả các sinh viên có tên bắt đầu bảng ký tự ‘h’
 select * from student
@@ -63,7 +65,7 @@ where student_name like 'h%';
 -- Hiển thị các thông tin lớp học có thời gian bắt đầu vào tháng 12
 
 select * from class
-where start_date like '%12%';
+where month(start_date)=12;
 
 -- Hiển thị tất cả các thông tin môn học có credit trong khoảng từ 3-5.
 
@@ -80,10 +82,12 @@ where student_name='Hung';
 -- Hiển thị các thông tin: StudentName, SubName, Mark. Dữ liệu sắp
 --  xếp theo điểm thi (mark) giảm dần. nếu trùng sắp theo tên tăng dần
 
-select s.student_name,m.mark,sub.sub_name
+select s.student_name,sub.sub_name,m.mark
 from student s 
 	inner join mark m on m.mark_id = s.student_id
     inner join `subject` sub on sub.sub_id=m.sub_id
     group by m.mark
-    order by m.mark desc;
+    order by m.mark desc,
+    s.student_name;   
+    
     

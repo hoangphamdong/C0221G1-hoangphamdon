@@ -69,18 +69,18 @@ inner join `order` o on c.customer_id=o.customer_id
  -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
  select c.customer_name
  from customer c
- right join `order` o on c.customer_id=o.customer_id
- group by c.customer_name;
+ left join `order` o on c.customer_id=o.customer_id
+where customer_name is null
+group by c.customer_name;
  
---  Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn 
+--  Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn customer
 -- (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện
 --  trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
 
 select c.customer_id,c.customer_name,c.customer_age,o.order_date,
 p.product_name,p.product_price,od.order_detail_quantity,
-sum(p.product_price*od.order_detail_quantity)"total"
+p.product_price*od.order_detail_quantity"total"
 from customer c
 inner join `order` o on c.customer_id=o.customer_id
 inner join order_detail od on o.order_id=od.order_id
-inner join product p on p.product_id=od.product_id
-group by c.customer_name;
+inner join product p on p.product_id=od.product_id;
