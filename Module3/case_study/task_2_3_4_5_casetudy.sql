@@ -3,7 +3,7 @@ use`data_base_furuma_resort`;
 -- 2.Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu là một
 --  trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 ký tự.
 select * from nhan_vien
-where (ho_ten like'H%'or ho_ten like'T%' or ho_ten like'K%') and length(ho_ten)<=15 ;
+where (ho_ten like'H%'or ho_ten like'T%' or ho_ten like'K%') and (length(ho_ten)<=15) ;
 
 -- 3.Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi 
 -- và có địa chỉ ở “Đà Nẵng” hoặc “Quảng Trị”.
@@ -35,14 +35,14 @@ lk.ten_loai_khach,
 hd.id_hop_dong,
 dv.ten_dich_vu,
 hd.ngay_lam_hop_dong,hd.ngay_ket_thuc,
-dv.chi_phi_thue+hdct.so_luong*dvdk.gia as 'tong_tien'
+sum(dv.chi_phi_thue+hdct.so_luong*dvdk.gia) as 'tong_tien'
 from khach_hang kh
 left join loai_khach lk on kh.id_loai_khach=lk.id_loai_khach
 left join hop_dong hd on hd.id_khach_hang=kh.id_khach_hang
 left join dich_vu dv on hd.id_dich_vu=dv.id_dich_vu
 left join hop_dong_chi_tient hdct on hd.id_hop_dong=hdct.id_hop_dong
 left join dich_vu_di_kem dvdk on dvdk.id_dich_vu_di_kem=hdct.id_dich_vu_di_kem
-group by kh.id_khach_hang;
+group by kh.id_khach_hang,hd.id_hop_dong;
 
  --  Hiển thị IDDichVu, TenDichVu, DienTich, ChiPhiThue, TenLoaiDichVu
 -- của tất cả các loại Dịch vụ chưa từng được Khách hàng thực hiện đặt
