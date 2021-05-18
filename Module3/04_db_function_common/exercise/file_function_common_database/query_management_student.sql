@@ -1,7 +1,8 @@
 use `management_student`;
 -- Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất
-select * ,max(credit)
+select * 
 from `subject`as sub
+where credit=(select max(credit) from `subject`)
 group by sub_id;
 
 -- Hiển thị các thông tin môn học có điểm thi lớn nhất.
@@ -16,7 +17,7 @@ group by sub.sub_id;
 
 select* ,avg(mark)as 'diem_trung_binh'
 from student s
-inner join mark m on s.student_id=m.student_id
+left join mark m on s.student_id=m.student_id
 group by s.student_id
 order by 'diem_trung_binh' desc;
 

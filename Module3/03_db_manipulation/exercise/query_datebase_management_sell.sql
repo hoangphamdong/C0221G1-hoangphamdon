@@ -84,4 +84,4 @@ from customer c
 inner join `order` o on c.customer_id=o.customer_id
 inner join order_detail od on o.order_id=od.order_id
 inner join product p on p.product_id=od.product_id
-group by o.order_id;
+group by order_detail_quantity;
