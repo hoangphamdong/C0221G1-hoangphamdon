@@ -67,21 +67,21 @@ inner join `order` o on c.customer_id=o.customer_id
  inner join product p on p.product_id=od.product_id;
  
  -- Hiển thị tên những khách hàng không mua bất kỳ một sản phẩm nào
- select c.customer_name
+ select *
  from customer c
  left join `order` o on c.customer_id=o.customer_id
-where customer_name is null
-group by c.customer_name;
+where o.order_id is null;
  
 --  Hiển thị mã hóa đơn, ngày bán và giá tiền của từng hóa đơn customer
 -- (giá một hóa đơn được tính bằng tổng giá bán của từng loại mặt hàng xuất hiện
 --  trong hóa đơn. Giá bán của từng loại được tính = odQTY*pPrice)
 
-select c.customer_id,c.customer_name,c.customer_age,o.order_date,
-p.product_name,p.product_price,od.order_detail_quantity,sum(order_detail_quantity*product_price)as 'total_order_dental_quantity',
-p.product_price*od.order_detail_quantity"total"
+select o.order_id,c.customer_name,c.customer_age,o.order_date,
+p.product_name,p.product_price,od.order_detail_quantity,
+sum(p.product_price*od.order_detail_quantity) as "total"
 from customer c
 inner join `order` o on c.customer_id=o.customer_id
 inner join order_detail od on o.order_id=od.order_id
 inner join product p on p.product_id=od.product_id
-group by order_detail_quantity;
+group by o.order_id;
+

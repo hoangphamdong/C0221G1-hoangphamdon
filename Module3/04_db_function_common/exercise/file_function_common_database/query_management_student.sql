@@ -15,7 +15,7 @@ group by sub.sub_id;
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên,
 --  xếp hạng theo thứ tự điểm giảm dần
 
-select* ,avg(mark)as 'diem_trung_binh'
+select s.student_id,student_name,s.phone,m.mark,m.exam_times ,avg(mark)as 'diem_trung_binh'
 from student s
 left join mark m on s.student_id=m.student_id
 group by s.student_id
