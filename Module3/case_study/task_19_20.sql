@@ -19,8 +19,10 @@ set sql_safe_updates=0;
 --  có trong hệ thống, thông tin hiển thị bao gồm ID (IDNhanVien, IDKhachHang),
 --  HoTen, Email, SoDienThoai, NgaySinh, DiaChi.
 
-select nv.id_nhan_vien,nv.ho_ten, nv.email,nv.sdt,nv.ngay_sinh,nv.dia_chi
-from nhan_vien as nv
-union all
-select kh.id_khach_hang ,kh.ho_ten, kh.email,kh.sdt,kh.ngay_sinh,kh.dia_chi
-from khach_hang as kh;
+select nv.id_nhan_vien,nv.ho_ten,
+		nv.email,nv.sdt,
+		nv.ngay_sinh,nv.dia_chi
+	from nhan_vien as nv
+	union all
+	select kh.id_khach_hang ,kh.ho_ten, kh.email,kh.sdt,kh.ngay_sinh,kh.dia_chi
+	from khach_hang as kh;
