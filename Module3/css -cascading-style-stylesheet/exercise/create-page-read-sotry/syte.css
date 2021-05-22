@@ -1,0 +1,170 @@
+body{
+    font-family: Arial;
+}
+
+#menu{
+    height: 30px;
+    padding:0;
+    margin:0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+#menu ul, #menu li{
+    padding:0;
+    margin:0;
+}
+
+#menu li{
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#menu li a{
+    width:150px;
+    height: 30px;
+    display: block;
+    text-decoration:none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+#menu ul ul li a{
+    width: 250px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#menu li a:hover{
+    background-color: red;
+}
+
+#menu ul ul{
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    visibility: hidden;
+}
+
+#menu ul li:hover ul{
+    visibility: visible;
+}
+#main{
+    height: 100px;
+    width: 200px;
+    padding: 20%;
+    position: relative;
+}
+#img{
+    width: 100px;
+    height: 50px;
+    padding: 10%;
+    float: left;
+    position: absolute;
+    left: 5px;
+    top: 35px;
+
+}
+.ips{
+    width: 100px;
+    height: 200px;
+    padding: 10%;
+    float: left;
+    position: absolute;
+    left: 10px;
+    top: 35px;
+
+}
+#tacgia{
+    width: 150px;
+    float: left;
+    position: absolute;
+    left: 350px;
+    top: 110px;
+}
+#mucsach{
+    width: 150px;
+    float: left;
+    position: absolute;
+    left: 350px;
+    top: 140px;
+}
+#tinhtrang{
+    width: 150px;
+    float: left;
+    position: absolute;
+    left: 350px;
+    top: 170px;
+}
+#tukhoa{
+    width: 150px;
+    float: left;
+    position: absolute;
+    left: 350px;
+    top: 210px;
+}
+.text-1{
+    width: 200px;
+    float: left;
+    position: absolute;
+    left: 480px;
+    top: 110px;
+}
+.text-2{
+    width: 200px;
+    float: left;
+    position: absolute;
+    left: 480px;
+    top: 140px;
+}.text-3{
+    width: 200px;
+     float: left;
+     position: absolute;
+     left: 480px;
+     top: 170px;
+ }.text-4{
+    width: 200px;
+      float: left;
+      position: absolute;
+      left: 480px;
+      top: 210px;
+  }
+  #content{
+      clear: left;
+      top: 550px;
+      position: absolute;
+  }
+  #table{
+      top: 150px ;
+      position: absolute;
+      left: 250px;
+  }
+#table-1{
+    width: 300px;
+    top: 40px ;
+    position: absolute;
+    left: 0px;
+}
+#table-2{
+    width: 400px;
+    top: 80px ;
+    position: absolute;
+    left: 0px;
+}
+#table-3{
+     width: 300px;
+     top: 120px ;
+     position: absolute;
+     left: 0px;
+ }
+#table-4{
+    width: 400px;
+    top: 160px ;
+    position: absolute;
+    left: 0px;
+}
