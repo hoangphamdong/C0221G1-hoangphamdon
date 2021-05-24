@@ -119,3 +119,15 @@ body{
 .category__heading-icon{
     font-size: 1rem;
 }
+.category-list{
+    padding-left: 0;
+}
+.category-item{
+
+}
+.category-item--active{
+
+}
+.category-item__link{
+
+}
