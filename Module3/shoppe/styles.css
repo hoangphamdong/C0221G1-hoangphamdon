@@ -1,0 +1,121 @@
+:root{
+    --white-color : white;
+    --text-color:black;
+}
+body{
+    font-family: sans-serif;
+}
+.header{
+    height: 120px;
+    background-image: linear-gradient(0,#fe6433,#f54e2d);
+}
+/*đưa các ul nằm cùng một hàng*/
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+/*xóa dấu chấm li*/
+.header__navbar-list{
+    list-style: none;
+   padding-left: 0;
+    margin: 4px;
+}
+/*đưa các li lên nằm ngang*/
+.header__navbar-item{
+    display: inline-block;
+}
+/*đưa hai đầu thụt vào*/
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+/*khoảng cách các chữ*/
+.header__navbar-item{
+    margin: 0 8px;
+}
+
+.header__navbar-item,
+.header__navbar-link{
+    display: inline-block;
+    font-size: 1.4rem;
+    color: var(--white-color);
+    text-decoration: none;
+    font-weight: 300;
+}
+/*tô đậm đăng nhập đăng ký*/
+.header__navbar-item--strong{
+    font-weight: 400;
+}
+/*tạo phân cách*/
+.header__navbar-item--separate::after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-left: 1px solid #FB9086;
+    height: 16px;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*tạo chữ mờ*/
+.header__navbar-item:hover,
+.header__navbar-icon:hover,
+.header__navbar-link:hover{
+    cursor: pointer;
+    color: rgba(255,255,255,0.7);
+}
+/*đổi icon màu trắng*/
+.header__navbar-icon-link{
+    color: var(--white-color);
+    text-decoration: none;
+}
+/*khoảng cách của icon*/
+.header__navbar-icon{
+    font-size: 1.8rem;
+    margin: 0 4px;
+}
+.header__navbar-title--no-pointer{
+    cursor: text;
+    color: var(--white-color);
+}
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.grid__column-2{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 16.6667%;
+
+}
+.grid__column-10{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 83.3334%;
+}
+/*app container*/
+.app__container{
+    background-color:#F5F5F5 ;
+}
+.category{
+    border-radius: 2px;
+    background-color: white;
+}
+.category__heading{
+    color:var(--text-color);
+    font-size: 1.8rem;
+    padding: 12px 16px;
+   border-bottom: 1px solid rgba(0,0,0,0.05);
+
+}
+.category__heading-icon{
+    font-size: 1rem;
+}
