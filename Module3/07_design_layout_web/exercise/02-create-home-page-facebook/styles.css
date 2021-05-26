@@ -5,6 +5,7 @@ body{
 .header{
     height: 50px;
     background-color: #1c1e21;
+
 }
 .grid__row{
     display: flex;
