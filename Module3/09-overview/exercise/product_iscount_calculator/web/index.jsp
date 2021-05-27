@@ -7,18 +7,32 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  <div class="product-discount">
+    <style>
+        .product-discount {
+            width: 350px;
+            height: 500px;
+            border: 1px solid #ccc;
+        }
+
+        .product-discount textarea, .product-discount input {
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="product-discount">
     <h1>Product Discount Calculator</h1>
     <form action="/discount" method="post">
-      <textarea name="description" cols="30" rows="10" placeholder="description"></textarea><br>
-      <input type="number" size="30" name="price" placeholder="price"/><br>
-      <input type="number" size="30" name="discount" placeholder="discount"/><br>
-      <input type="submit" name="calculate" value="Calculate Discount"/><br>
+        <textarea name="description" cols="30" rows="10" placeholder="description"></textarea><br>
+        <input type="number" size="30" name="price" placeholder="price"/>
+        <p>${amount}</p><br>
+        <input type="number" size="30" name="discount" placeholder="discount"/>
+        <p>${price}</p><br>
+        <input type="submit" name="calculate" value="Calculate Discount"/><br>
     </form>
-  </div>
-  </body>
+</div>
+</body>
 </html>
