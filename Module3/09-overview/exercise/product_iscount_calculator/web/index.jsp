@@ -9,26 +9,15 @@
 <html>
   <head>
     <title>$Title$</title>
-    <style>
-      .product-discount {
-        width: 350px;
-        height: 370px;
-        border: 1px solid #ccc;
-      }
-      .product-discount textarea, .product-discount input {
-        margin: 5px;
-        padding: 5px;
-      }
-    </style>
   </head>
   <body>
   <div class="product-discount">
     <h1>Product Discount Calculator</h1>
     <form action="/discount" method="post">
-      <textarea name="description" cols="30" rows="30" placeholder="description"></textarea>
-      <input type="number" size="30" name="price" placeholder="price"/>
-      <input type="number" size="30" name="discount" placeholder="discount"/>
-      <input type="submit" name="calculate" value="Calculate Discount"/>
+      <textarea name="description" cols="30" rows="10" placeholder="description"></textarea><br>
+      <input type="number" size="30" name="price" placeholder="price"/><br>
+      <input type="number" size="30" name="discount" placeholder="discount"/><br>
+      <input type="submit" name="calculate" value="Calculate Discount"/><br>
     </form>
   </div>
   </body>
