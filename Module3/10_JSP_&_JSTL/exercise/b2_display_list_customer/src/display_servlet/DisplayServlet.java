@@ -1,4 +1,4 @@
-package servlet_display;
+package display_servlet;
 
 import model.Customer;
 
