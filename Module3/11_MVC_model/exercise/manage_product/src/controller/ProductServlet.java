@@ -28,6 +28,7 @@ public class ProductServlet extends HttpServlet {
                 updateProduct(request,response);
             case"delete":
                 deleteProduct(request,response);
+
             default:
                 break;
         }
@@ -126,6 +127,7 @@ public class ProductServlet extends HttpServlet {
         }
 
     }
+
 
     private void listProducts(HttpServletRequest request, HttpServletResponse response) {
         List<Product>products=this.productService.findAll();

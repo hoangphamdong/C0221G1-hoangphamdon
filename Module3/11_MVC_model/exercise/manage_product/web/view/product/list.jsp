@@ -10,9 +10,6 @@
     <a href="/products?action=create">
         Create new Product
     </a>
-    <a href="/products?action=find">
-        Find Product
-    </a>
 </p>
 <table border="1">
     <tr>
@@ -28,7 +25,7 @@
             <td><a href="/products?action=view$id=${product.getId()}">${product.getName()}</a></td>
         <td>${product.getAmount()}</td>
         <td>${product.getProductDescription()}</td>
-        <td>${product.getProducer}</td>
+        <td>${product.getProducer()}</td>
         <td><a href="/products?action=edit&id=${product.getId()}">edit</a></td>
         <td><a href="/products?action=delete&id=${product.getId()}">Delete</a></td>
         </tr>
