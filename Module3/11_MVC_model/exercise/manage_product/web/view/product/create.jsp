@@ -17,7 +17,7 @@
     </c:if>
 </p>
 <p>
-    <a href="/customers">Back to product list</a>
+    <a href="/products">Back to product list</a>
 </p>
 <form method="post">
     <fieldset>

@@ -31,7 +31,8 @@ public class ProductRepository {
     }
     public void update(int id,Product product){
         products.put(id,product);
-    }public void remote(int id){
+    }
+    public void remote(int id){
         products.remove(id);
     }
 

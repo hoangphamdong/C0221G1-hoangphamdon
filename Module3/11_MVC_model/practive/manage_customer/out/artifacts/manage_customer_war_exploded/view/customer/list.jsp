@@ -11,7 +11,7 @@
     <a href="/customers?action=create">Create new customer</a>
 </p>
 <p>
-    <a href="/customers?action=create">find product</a>
+    <a href="/customers?action=find">find customer</a>
 </p>
 <table border="1">
     <tr>
