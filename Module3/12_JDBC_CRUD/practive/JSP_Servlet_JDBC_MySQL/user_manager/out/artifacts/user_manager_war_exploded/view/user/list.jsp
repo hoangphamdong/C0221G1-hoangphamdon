@@ -13,6 +13,10 @@
     <h2>
         <a href="/users?action=create">Add New User</a>
     </h2>
+    <form class="d-flex" action="/users?action=search" method="post">
+        <input name="country" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 150px">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
 </center>
 <div align="center">
     <table border="1" cellpadding="5" id="tableStudent" class="table table-striped table-bordered" style="width: 100%">

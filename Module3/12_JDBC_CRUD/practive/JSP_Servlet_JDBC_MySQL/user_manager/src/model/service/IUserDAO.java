@@ -9,7 +9,7 @@ public interface IUserDAO {
     public void insertUser(User user) throws SQLException;
 
     public User selectUser(int id);
-
+public User selectUser(String country);
     public List<User> selectAllUsers();
 
     public boolean deleteUser(int id) throws SQLException;

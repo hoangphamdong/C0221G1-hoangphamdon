@@ -48,6 +48,10 @@
                 <td><input type="text" name="customerEmail" id="email"></td>
             </tr>
             <tr>
+                <td>Customer Type Id: </td>
+                <td><input type="text" name="customerTypeId" id="typeId"></td>
+            </tr>
+            <tr>
                 <td>Customer Address: </td>
                 <td><input type="text" name="customerAddress" id="address"></td>
             </tr>

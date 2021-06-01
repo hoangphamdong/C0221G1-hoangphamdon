@@ -20,6 +20,7 @@ public class UserDAO implements IUserDAO {
     private static final String SELECT_ALL_USERS = "select * from users";
     private static final String DELETE_USERS_SQL = "delete from users where id = ?;";
     private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
+    private static final String SEARCH_USERS_SQl = "select*from users where country=?;";
 
     protected Connection getConnection() {
         Connection connection = null;
@@ -59,7 +60,8 @@ public class UserDAO implements IUserDAO {
         // Step 1: Establishing a Connection
         try (Connection connection = getConnection();
              // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
+             PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_USERS_SQl);)
+        {
             preparedStatement.setInt(1, id);
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
@@ -72,6 +74,35 @@ public class UserDAO implements IUserDAO {
                 String country = rs.getString("country");
                 user = new User(id, name, email, country);
             }
+        } catch (SQLException e) {
+            printSQLException(e);
+        }
+        return user;
+    }
+
+    @Override
+    public User selectUser(String country) {
+        List<User>users=new ArrayList<>();
+        User user = null;
+        // Step 1: Establishing a Connection
+        try (Connection connection = getConnection();
+             // Step 2:Create a statement using connection object
+             PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_USERS_SQl);) {
+            preparedStatement.setString(1, country);
+            System.out.println(preparedStatement);
+            // Step 3: Execute the query or update query
+            ResultSet rs = preparedStatement.executeQuery();
+
+
+            // Step 4: Process the ResultSet object.
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                String name = rs.getString("name");
+                String email = rs.getString("email");
+                user = new User(id, name, email, country);
+
+            }
+
         } catch (SQLException e) {
             printSQLException(e);
         }

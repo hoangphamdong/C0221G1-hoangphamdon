@@ -27,9 +27,26 @@ public class UserServlet extends HttpServlet {
             case "create":
                 insertUser(request, response);
                 break;
+            case "search":
+                searchUser(request,response);
+                break;
             case "edit":
                 updateUser(request, response);
                 break;
+        }
+    }
+
+    private void searchUser(HttpServletRequest request, HttpServletResponse response) {
+        String country = request.getParameter("country");
+        User existingUser = userDAO.selectUser(country);
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/view.jsp");
+        request.setAttribute("User", existingUser);
+        try {
+            dispatcher.forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
