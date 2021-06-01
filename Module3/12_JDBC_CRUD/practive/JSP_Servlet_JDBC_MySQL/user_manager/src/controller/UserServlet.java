@@ -78,7 +78,7 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         User newUser = new User(name, email, country);
         try {
-            userDAO.insertUser(newUser);
+            userDAO.insertUserStore(newUser);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -110,8 +110,16 @@ public class UserServlet extends HttpServlet {
             case "delete":
                 deleteUser(request, response);
                 break;
+
+            case "permision":
+                addUserPermision(request, response);
+                break;
             default:
                 listUser(request, response);
+                break;
+            case "test-without-tran":
+
+                testWithoutTran(request, response);
                 break;
         }
     }
@@ -154,7 +162,7 @@ public class UserServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
-        User existingUser = userDAO.selectUser(id);
+        User existingUser = userDAO.getUserById(id);
         RequestDispatcher dispatcher = request.getRequestDispatcher("view/user/edit.jsp");
         request.setAttribute("user", existingUser);
         try {
@@ -175,5 +183,20 @@ public class UserServlet extends HttpServlet {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+    }
+    private void addUserPermision(HttpServletRequest request, HttpServletResponse response) {
+
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+
+        int[] permision = {1, 2, 4};
+
+        userDAO.addUserTransaction(user, permision);
+
+    }
+    private void testWithoutTran(HttpServletRequest request, HttpServletResponse response) {
+
+        userDAO.insertUpdateWithoutTransaction();
+
     }
 }

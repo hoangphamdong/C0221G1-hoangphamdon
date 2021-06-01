@@ -15,24 +15,15 @@
         <th>Name</th>
         <th>Email</th>
         <th>Country</th>
-        <th>Actions</th>
     </tr>
     </thead>
-    <c:forEach var="user" items="${listUser}">
-        <tr>
-            <td><c:out value="${user.id}"/></td>
-            <td><c:out value="${user.name}"/></td>
-            <td><c:out value="${user.email}"/></td>
-            <td><c:out value="${user.country}"/></td>
-            <td>
-                <a href="/users?action=edit&id=${user.id}">Edit</a>
-                <a href="/users?action=delete&id=${user.id}">Delete</a>
-            </td>
-        </tr>
-    </c:forEach>
-
+    <tr>
+        <td><c:out value="${user.id}"/></td>
+        <td><c:out value="${user.name}"/></td>
+        <td><c:out value="${user.email}"/></td>
+        <td><c:out value="${user.country}"/></td>
+    </tr>
 </table>
-</div>
 <script src="web/jquery/jquery-3.6.0.min.map"></script>
 <script src="web/dataTables/js/jquery.dataTables.min.js"></script>
 <script src="web/dataTables/DataTables-1.10.24/js/dataTables.bootstrap4.min.js"></script>
