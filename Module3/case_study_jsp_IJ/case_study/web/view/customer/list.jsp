@@ -17,20 +17,11 @@
         <form action="/">
             <input class="btn btn-outline-success ml-3" type="submit" value="Back Home"/>
         </form>
-<%--        <form class="d-flex" action="/customer?action=search" method="get">--%>
-<%--            <input name="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="width: 150px">--%>
-<%--            <button class="btn btn-outline-success" type="submit">Search</button>--%>
-<%--        </form>--%>
         <form action="/customer" style="margin-left: 200px" class="d-flex">
-            <input  name="action" value="search" hidden>
-            <input class="form-control me-2 d-flex"  type="text" name="search" placeholder="Input Search">
+            <input name="action" value="search" hidden>
+            <input class="form-control me-2 d-flex" type="text" name="search" placeholder="Search">
             <button class="btn btn-success ml-3">Search</button>
         </form>
-<%--        <form method="get" action="/customer&action=" class="d-flex " style="margin-left: 200px">--%>
-<%--            <input class="form-control me-2 d-flex" type="search" placeholder="Search"--%>
-<%--                   name="a"  style="width: 300px">--%>
-<%--            <input class="btn btn-outline-success ml-3" type="submit" value="Search"/>--%>
-<%--        </form>--%>
         <form action="/customer" style="margin-left: 100px">
             <input type="hidden" name="action" value="create">
             <input class="btn btn-outline-success" type="submit" value="Create New Customer"
@@ -51,7 +42,6 @@
             <th scope="col">Address</th>
             <th scope="col">Edit</th>
             <th scope="col">Delete</th>
-            <th scope="col">View</th>
         </tr>
         </thead>
         <tbody>
@@ -59,7 +49,11 @@
             <tr>
                 <td><c:out value="${customer.getCustomerId()}"/></td>
                 <td><c:out value="${customer.getCustomerTypeName()}"/></td>
-                <td><c:out value="${customer.getCustomerName()}"/></td>
+                <td>
+                    <a href="/customer?action=view&id=${customer.getCustomerId()}" class="text-dark">
+                    <c:out value="${customer.getCustomerName()}"/>
+                    </a>
+                </td>
                 <td><c:out value="${customer.getCustomerBirthday()}"/></td>
 
                 <c:if test="${customer.getCustomerGender()==1}">
@@ -73,18 +67,6 @@
                 <td><c:out value="${customer.getCustomerPhone()}"/></td>
                 <td><c:out value="${customer.getCustomerEmail()}"/></td>
                 <td><c:out value="${customer.getCustomerAddress()}"/></td>
-                <td>
-                    <button type="button" class="btn btn-danger"
-                            onclick="viewDataToModal('${customer.getCustomerId()}','${customer.getCustomerTypeName()}',
-                                    '${customer.getCustomerName()}','${customer.getCustomerBirthday()}',
-                                    '${customer.getCustomerGender()}','${customer.getCustomerIdCard()}',
-                                    '${customer.getCustomerPhone()}','${customer.getCustomerEmail()}',
-                                    '${customer.getCustomerAddress()}')"
-                            data-toggle="modal" data-target="#exampleModalLong">
-                        View
-                    </button>
-                </td>
-
                 <td>
                     <a class="btn btn-primary" href="/customer?action=edit&id=${customer.getCustomerId()}"
                        role="button">Edit</a>
@@ -101,37 +83,6 @@
         </tbody>
     </table>
 </div>
-<!-- Modal -->
-<div class="modal fade" id="exampleModalLong2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-     aria-hidden="true">
-    <form>
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle2">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerId"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerType"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerName"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerBirthday"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerGender"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerIdCard"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerPhone"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerEmail"></span></p>
-                    <p>Bạn có muốn xóa sình viên tên :<span id="customerAddress"></span></p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                    <button type="submit" class="btn btn-primary">OK</button>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
      aria-hidden="true">
     <form action="/customer?action=delete" method="post">
@@ -145,7 +96,7 @@
                 </div>
                 <div class="modal-body">
                     <input hidden type="text" name="id" id="idStudent">
-                    <p>Bạn có muốn xóa sình viên tên :<span id="nameStudent"></span></p>
+                    <p>You want delete customer name <span id="nameStudent"></span> ?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
@@ -159,17 +110,6 @@
     function sendDataToModal(id, name) {
         document.getElementById("idStudent").value = id;
         document.getElementById("nameStudent").innerText = name
-    }
-    function viewDataToModal(id,typeName,name,birthday,gender,idCard,phone,email,address) {
-        document.getElementById("customerId").innerText = id;
-        document.getElementById("customerType").innerText = typeName;
-        document.getElementById("customerName").innerText = name;
-        document.getElementById("customerBirthday").innerText = birthday;
-        document.getElementById("customerGender").innerText = gender;
-        document.getElementById("customerIdCard").innerText = idCard;
-        document.getElementById("customerPhone").innerText = phone;
-        document.getElementById("customerEmail").innerText = email;
-        document.getElementById("customerAddress").innerText = address;
     }
 </script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

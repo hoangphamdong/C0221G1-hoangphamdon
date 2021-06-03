@@ -11,9 +11,6 @@ import java.util.Map;
 public class CustomerRepository {
     BaseRepository baseRepository = new BaseRepository();
 
-    private static final String INSERT_USERS_SQL = "INSERT INTO users" + "  (name, email, country) VALUES " +
-            " (?, ?, ?);";
-
     final String UPDATE_CUSTOMER_BY_ID = "update customer\n" +
             "set customer_type_id=?,customer_name=?,\n" +
             "\tcustomer_birthday=?,customer_gender=?,\n" +
@@ -22,7 +19,6 @@ public class CustomerRepository {
             "where customer_id=?;";
     private static final String SELECT_ALL_CUSTOMERS = "call get_list_customer;";
     private static final String INSERT_CUSTOMERS = "call insert_customer(?,?,?,?,?,?,?,?);";
-    private static final String UPDATE_USERS_SQL = "update users set name = ?,email= ?, country =? where id = ?;";
     final String SELECT_USERS_BY_ID = "select* from customer\n" +
             "where customer_id=?;";
     final String DELETE_Customer_BY_ID = "delete from customer where customer_id = ?;";
@@ -156,18 +152,14 @@ public class CustomerRepository {
     }
 
     public Customer getCustomerById(int id) {
-
         Customer customer = null;
-
-        String query = "{call get_customer_by_id(?);}";
-
-        // Step 1: Establishing a Connection
-
+//        String query = "{call get_customer_by_id(?);}";
         try {
 
             Connection connection = baseRepository.getConnection();
 
-            CallableStatement callableStatement = connection.prepareCall(query);
+            CallableStatement callableStatement = connection.prepareCall(" select * from customer where customer_id=?;");
+
             callableStatement.setInt(1, id);
 
 
@@ -182,9 +174,9 @@ public class CustomerRepository {
 
                 String customerName = rs.getString("customer_name");
 
-                String customer_birthday = rs.getString("customer_birthday");
+                String customerBirthday = rs.getString("customer_birthday");
 
-                int customer_gender = rs.getInt("customer_gender");
+                int customerGender = rs.getInt("customer_gender");
 
                 String customerIdCard = rs.getString("customer_id_card");
 
@@ -194,8 +186,8 @@ public class CustomerRepository {
 
                 String customerAddress = rs.getString("customer_address");
 
-                customer = new Customer(customerId, customerTypeId, customerName, customer_birthday,
-                        customer_gender, customerIdCard, customerPhone, customerEmail, customerAddress);
+                customer = new Customer(customerId, customerTypeId, customerName, customerBirthday,
+                        customerGender, customerIdCard, customerPhone, customerEmail, customerAddress);
 
             }
 
