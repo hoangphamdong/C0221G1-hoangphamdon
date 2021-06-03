@@ -4,33 +4,50 @@ import model.bean.Customer;
 import model.repository.CustomerRepository;
 import model.service.ICustomerService;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class CustomerServiceImpl implements ICustomerService {
     CustomerRepository customerRepository = new CustomerRepository();
 
     @Override
-    public List<Customer> findAll() {
-        return customerRepository.findAll();
+    public void insertCustomer(Customer customer) throws SQLException {
+        customerRepository.insertCustomer(customer);
     }
 
     @Override
-    public void save(Customer customer) {
-        customerRepository.save(customer);
+    public Customer selectCustomer(int id) {
+
+        return customerRepository.selectUser(id);
     }
 
     @Override
-    public Customer  findById(int id) {
-        return customerRepository.findById(id);
+    public List<Customer> selectAllCustomer() {
+        return customerRepository.selectAllCustomer();
     }
 
     @Override
-    public void update(int id, Customer customer) {
-        customerRepository.update(id, customer);
+    public boolean deleteCustomer(int id) throws SQLException {
+        return customerRepository.deleteCustomer(id);
     }
 
     @Override
-    public void remove(int id) {
-        customerRepository.remote(id);
+    public boolean updateCustomer(Customer customer) throws SQLException {
+        return customerRepository.updateCustomer(customer);
+    }
+
+    @Override
+    public void insertUserStore(Customer customer) throws SQLException {
+
+    }
+
+    @Override
+    public Customer getCustomerById(int id) {
+        return customerRepository.getCustomerById(id);
+    }
+
+    @Override
+    public List<Customer> findByCustomerName(String customerName) {
+        return customerRepository.findByCustomerName(customerName);
     }
 }

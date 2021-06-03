@@ -1,87 +1,115 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
+<head>
     <title></title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
-  </head>
-  <body>
-  <header>
-    <div class="container-fluid bg-info ">
-      <div class="row d-flex">
-        <div class="col-lg-8 ">
-          <div>
-            <img src="view/img/logo.jpg" style="height: 100px;width: 100px">
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="m-3">
-            <h1>Hoàng Phạm Đông</h1>
-          </div>
-        </div>
-      </div>
+    <link rel="stylesheet" href="web/bootstrap/css/bootstrap.min.css"/>
+    <style>
+        .fakeimg {
+            height: 200px;
+            background: #aaa;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div style="margin-bottom:20px">
+        <img src="view/img/backgrou.jpeg" height="350" width="1100"/>
     </div>
-  </header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link disabled mx-5" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-5" href="#">Employee</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link mx-5" href="/customer?action">Customer</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled mx-5" href="#">Service</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled mx-5" href="#">Contract</a>
-        </li>
-      </ul>
-    </div>
-    <form class="form-inline my-2 my-lg-0 mr-5">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </nav>
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col-4">
-          <div class="row my-5">
-            <div class="col-12">
-              <p>item One</p>
-            </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-12">
-              <p>item Two</p>
-            </div>
-          </div>
-          <div class="row my-5">
-            <div class="col-12">
-              <p>item Three</p>
-            </div>
-          </div>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark my-3">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/customer">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+            <form class="d-flex " style="margin-left: 400px">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success ml-3" type="submit">Search</button>
+            </form>
         </div>
-        <div class="col-8">
-          <h1>Body</h1>
-        </div>
-      </div>
-    </div>
-  </main>
-  <fooder>
-    <div class="row bg-dark mt-3">
-      <div class="col-12">
-        <div class="pl-5">
-          <h1>Footer</h1>
-        </div>
-      </div>
+    </nav>
+    <div class="container mt-3">
+        <div class="row">
 
+            <!-- Cột trái -->
+            <div class="col-sm-4">
+                <h2>KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT
+                    NAM.</h2>
+                <h5>FURAMA</h5>
+                <div class="fakeimg ">
+                    <img src="view/img/nef.jpg" height="200" width="360">
+                    <%--            <img  height="200" width="350"/>--%>
+                </div>
+                <p class="mt-2">Khu nghỉ dưỡng Furama Đà Nẵng là một khu nghỉ dưỡng 5 sao sang trọng, có uy tín và được
+                    xem là một trong những biểu tượng của ngành du lịch Việt Nam.</p>
+                <h3>Liên kết</h3>
+                <p>Nội dung mục liên kết</p>
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Kích hoạt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên kết 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Liên kết 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Vô hiệu hóa</a>
+                    </li>
+                </ul>
+                <hr class="d-sm-none">
+            </div>
+
+            <div class="col-sm-8    ">
+                <h2>Furama</h2>
+                <h5>KHU NGHỈ DƯỠNG ĐẲNG CẤP THẾ GIỚI, FURAMA ĐÀ NẴNG, NỔI TIẾNG LÀ KHU NGHỈ DƯỠNG ẨM THỰC TẠI VIỆT
+                    NAM.</h5>
+                <div class="fakeimg embed-responsive embed-responsive-21by9 img-fluid">
+                    <iframe src="https://www.youtube.com/embed/PgvSSl4jm1U" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                </div>
+                <p class="mt-2">Hướng ra bãi biển Đà Nẵng trải dài cát trắng, Furama Resort Đà Nẵng là cửa ngõ đến với 3
+                    di sản văn
+                    hoá thế giới: Hội An (20 phút), Mỹ Sơn (90 phút) và Huế (2 tiếng. 196 phòng hạng sang cùng với 70
+                    căn biệt thự từ hai đến bốn phòng ngủ có hồ bơi riêng đều được trang trí trang nhã, theo phong cách
+                    thiết kế truyền thống của Việt Nam và kiến trúc thuộc địa của Pháp, biến Furama thành khu nghỉ dưỡng
+                    danh giá nhất tại Việt Nam – vinh dự được đón tiếp nhiều người nổi tiếng, giới hoàng gia, chính
+                    khách, ngôi sao điện ảnh và các nhà lãnh đạo kinh doanh quốc tế.</p>
+                <h2>CÁC LOẠI PHÒNG</h2>
+                <h5>VIEW ALL ROOMS</h5>
+                <div class="fakeimg d-flex">
+
+                    <img src="view/img/room.jpg" height="200" width="235"/>
+
+                    <img src="view/img/room1.jpg" height="200" width="235"/>
+                    <img src="view/img/room2.jpg" height="200" width="240"/>
+                </div>
+                <p class="mt-2">Khu nghỉ dưỡng có 196 phòng được thiết kế theo phong cách truyền thống Việt Nam kết hợp
+                    với phong cách Pháp, 2 tòa nhà 4 tầng có hướng nhìn ra biển, nhìn ra hồ bơi trong xanh và những khu
+                    vườn nhiệt đới xanh tươi mát. Ngoài ra, khu nghỉ dưỡng Furama còn cung cấp các liệu pháp spa,
+                    phòng xông hơi ướt, phòng xông hơi khô, dịch vụ mát-xa cạnh hồ bơi, các dịch vụ thể thao dưới
+                    nước và các lớp tập yoga và Thái Cực Quyền trên bãi biển.</p>
+            </div>
+        </div>
     </div>
-  </fooder>
-  </body>
+
+    <div class="jumbotron text-center mt-3" style="margin-bottom:0">
+        <p>@Hoàng Phạm Đông</p>
+    </div>
+</div>
+</body>
 </html>
