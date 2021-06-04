@@ -16,19 +16,19 @@
         <img src="view/img/backgrou.jpeg" height="350" width="1100"/>
     </div>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark my-3">
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Employee</a>
+                    <a class="nav-link" href="/employee">Employee</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/customer">Customer</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Service</a>
+                    <a class="nav-link" href="/service">Service</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Contract</a>
