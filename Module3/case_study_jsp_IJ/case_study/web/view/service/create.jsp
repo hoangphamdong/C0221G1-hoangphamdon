@@ -258,10 +258,10 @@
         <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Employee</a>
+                    <a class="nav-link" href="/employee">Employee</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/customer">Customer</a>
@@ -270,7 +270,7 @@
                     <a class="nav-link" href="/service">Service</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contract</a>
+                    <a class="nav-link" href="/contract">Contract</a>
                 </li>
             </ul>
             <form class="d-flex " style="margin-left: 400px">

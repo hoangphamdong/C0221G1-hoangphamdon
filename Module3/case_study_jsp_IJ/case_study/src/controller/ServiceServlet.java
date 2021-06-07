@@ -30,15 +30,6 @@ public class ServiceServlet extends HttpServlet {
             case "create":
                 createService(request, response);
                 break;
-            case "edit":
-
-                break;
-            case "view":
-
-                break;
-            case "search":
-
-                break;
             default:
                 listService(request, response);
                 break;
@@ -55,15 +46,6 @@ public class ServiceServlet extends HttpServlet {
         switch (action) {
             case "create":
                 showCreateForm(request, response);
-                break;
-            case "edit":
-
-                break;
-            case "view":
-
-                break;
-            case "search":
-
                 break;
             default:
                 listService(request, response);

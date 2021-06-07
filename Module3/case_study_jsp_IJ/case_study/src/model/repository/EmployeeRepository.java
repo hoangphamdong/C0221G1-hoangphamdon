@@ -23,13 +23,10 @@ public class EmployeeRepository {
                     "where employee_name like ?";
 
     final String UPDATE_EMPLOYEE_BY_ID = "update employee\n" +
-            "set employee_name=?,employee_birthday=?,\n" +
-            "\temployee_id_card=?,employee_salary=?,\n" +
-            "    employee_phone=?,employee_email=?,\n" +
-            "    employee_address=?,position_id=?\n" +
-            "    education_degree_id=?,division_id=?\n" +
-            "    user_name=?" +
-            "where employee_id=?;";
+            "set employee_name=?,employee_birthday=?,employee_id_card=?,\n" +
+            "\temployee_salary=?,employee_phone=?,employee_email=?,\n" +
+            "    employee_address=?,position_id=?,education_degree_id=?,division_id=?\n" +
+            "    where employee_id=?;";
 
     public List<Employee> selectAllEmployee() {
 
@@ -103,6 +100,7 @@ public class EmployeeRepository {
             callableStatement.setInt(10, employee.getDivisionId());
 
             callableStatement.setString(11, employee.getUserName());
+
 
             System.out.println(callableStatement);
 
@@ -239,6 +237,7 @@ public class EmployeeRepository {
         boolean check = false;
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_EMPLOYEE_BY_ID);
+
             preparedStatement.setString(1, employee.getEmployeeName());
 
             preparedStatement.setString(2, employee.getEmployeeBirthday());
@@ -259,7 +258,10 @@ public class EmployeeRepository {
 
             preparedStatement.setInt(10, employee.getDivisionId());
 
-            preparedStatement.setString(11, employee.getUserName());
+//            preparedStatement.setString(11, employee.getUserName());
+
+            preparedStatement.setInt(11, employee.getEmployee());
+
             check = preparedStatement.executeUpdate() > 0;
             preparedStatement.close();
             connection.close();

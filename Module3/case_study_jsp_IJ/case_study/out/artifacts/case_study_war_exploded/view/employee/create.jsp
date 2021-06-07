@@ -7,8 +7,8 @@
 </head>
 <body>
 <div class="form-group m-5">
-    <form action="/customer">
-        <button class="btn btn-success" type="submit">Back Home</button>
+    <form action="/employee">
+        <button class="btn btn-success" type="submit">Back To List Employee</button>
     </form>
 </div>
 <div class="container my-5 bg-primary text-white" style="width: 600px ">
@@ -69,16 +69,6 @@
                         <label>User Name</label>
                         <input type="text" class="form-control" placeholder="User Name" name="user">
                     </div>
-                    <%--            <div class="form-group ml-3">--%>
-                    <%--                <label>Customer Type</label>--%>
-                    <%--                <select class="form-control ">--%>
-                    <%--                    <option value="" selected>Diamond</option>--%>
-                    <%--                    <option value="">Platinium</option>--%>
-                    <%--                    <option value="">Gold</option>--%>
-                    <%--                    <option value="">Silver</option>--%>
-                    <%--                    <option value="">Member</option>--%>
-                    <%--                </select>--%>
-
                 </div>
                 <div class="form-group my-3">
                     <button class="btn btn-success" type="submit">ADD</button>

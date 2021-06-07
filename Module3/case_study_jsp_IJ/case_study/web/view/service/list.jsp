@@ -39,21 +39,6 @@
         </div>
     </nav>
 
-<%--    <div class="d-flex">--%>
-<%--        <form action="/">--%>
-<%--            <input class="btn btn-outline-success ml-3" type="submit" value="Back Home"/>--%>
-<%--        </form>--%>
-<%--        <form action="/customer" style="margin-left: 150px;" class="d-flex">--%>
-<%--            <input name="action" value="search" hidden>--%>
-<%--            <input class="form-control me-2 d-flex" type="text" name="search" placeholder="Search" style="width: 200px">--%>
-<%--            <button class="btn btn-success ml-3">Search</button>--%>
-<%--        </form>--%>
-<%--        <form action="/customer" >--%>
-<%--            <input type="hidden" name="action" value="create">--%>
-<%--            <input class="btn btn-outline-success" type="submit" value="ADD New Service"--%>
-<%--                   style="margin-left: 350px"/>--%>
-<%--        </form>--%>
-<%--    </div>--%>
 
     <form action="/service" style="margin-left: 550px">
         <input type="hidden" name="action" value="create">

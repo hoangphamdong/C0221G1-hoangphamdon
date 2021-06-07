@@ -33,8 +33,6 @@ public class CustomerServlet extends HttpServlet {
             case "delete":
                 deleteCustomer(request, response);
                 break;
-            case "search":
-                break;
         }
     }
 
@@ -69,7 +67,7 @@ public class CustomerServlet extends HttpServlet {
         List<Customer> customers = customerService.selectAllCustomer();
         request.setAttribute("customers", customers);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/list.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/list1.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -80,7 +78,7 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void showCreateForm(HttpServletRequest request, HttpServletResponse response) {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/create1.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -147,21 +145,61 @@ public class CustomerServlet extends HttpServlet {
     //do post
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
         String customerName = request.getParameter("name");
-        String customerBirthday = request.getParameter("birthday");
-        int customerGender = Integer.parseInt(request.getParameter("gender"));
+
+        String day = request.getParameter("day");
+        String month = request.getParameter("month");
+        String year = request.getParameter("year");
+        String customerBirthday = year + month + day;
+
+//        int customerGender = Integer.parseInt(request.getParameter("gender"));
+        int customerGender = 0;
+        String gender = request.getParameter("sex");
+        switch (gender) {
+            case "male":
+                customerGender = 0;
+                break;
+            case "female":
+                customerGender = 1;
+                break;
+        }
+
         String customerIdCard = request.getParameter("idCard");
+
         String customerPhone = request.getParameter("phone");
+
         String customerEmail = request.getParameter("email");
+
         String customerAddress = request.getParameter("address");
-        int customerType = Integer.parseInt(request.getParameter("type"));
+
+        int customerType = 0;
+        String type = request.getParameter("type");
+        switch (type) {
+            case "diamond":
+                customerType = 1;
+                break;
+            case "platinium":
+                customerType = 2;
+                break;
+            case "gold":
+                customerType = 3;
+                break;
+            case "silver":
+                customerType = 4;
+                break;
+            case "member":
+                customerType = 5;
+                break;
+        }
+
         Customer customer = new Customer(customerType, customerName, customerBirthday, customerGender,
                 customerIdCard, customerPhone, customerEmail, customerAddress);
+
         try {
             customerService.insertCustomer(customer);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/create.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/customer/create1.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
