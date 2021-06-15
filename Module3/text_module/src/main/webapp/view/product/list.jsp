@@ -358,12 +358,12 @@
                     <div class="col-sm-6">
                         <div class="search-box d-flex">
                             <i class="material-icons">&#xE8B6;</i>
-                            <form action="/employee" class="d-flex">
+                            <form action="/product" class="d-flex">
                                 <input name="action" value="search" hidden>
                                 <input name="search" type="text" class="form-control mr-3" placeholder="Search&hellip;">
                                 <button class="btn btn-success mr-5">Search</button>
                             </form>
-                            <form action="/employee">
+                            <form action="/product">
                                 <input type="hidden" name="action" value="create">
                                 <button class="btn btn-info add-new" type="submit" value="Add New">Add New</button>
                             </form>
@@ -375,30 +375,33 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>ID<i class="fa fa-sort"></i></th>
-                    <th>Name <i class="fa fa-sort"></i></th>
-                    <th>Birthday</th>
+                    <th>Product Name <i class="fa fa-sort"></i></th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Color</th>
+                    <th>Category</th>
 <%--                    <th>Phone</th>--%>
 <%--                    <th>Email<i class="fa fa-sort"></i></th>--%>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach var="employee" items="${employees}" varStatus="status">
+                <c:forEach var="product" items="${products}" varStatus="status">
                     <tr>
                         <td><c:out value="${status.count}"></c:out></td>
-                        <td><c:out value="${employee.getEmployeeId()}"/></td>
-                        <td><c:out value="${employee.getEmployeeName()}"/></td>
-                        <td><c:out value="${employee.getEmployeeBirthday()}"/></td>
-<%--                        <td><c:out value="${employee.getEmployeePhone()}"/></td>--%>
-<%--                        <td><c:out value="${employee.getEmployeeEmail()}"/></td>--%>
+                        <td><c:out value="${product.getProductName()}"/></td>
+                        <td><c:out value="${product.getProductPrice()}"/></td>
+                        <td><c:out value="${product.getProductQuantity()}"/></td>
+                        <td><c:out value="${product.getProductColor()}"/></td>
+                        <td><c:out value="${product. getCategoryId()}"/></td>
+
                         <td>
-                            <a href="/employee?action=view&id=${employee.getEmployeeId()}" class="view" title="View"
+                            <a href="/employee?action=view&id=${product.getProductId()}" class="view" title="View"
                                data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="/employee?action=edit&id=${employee.getEmployeeId()}" class="edit" title="Edit"
+                            <a href="/product?action=edit&id=${product.getProductId()}" class="edit" title="Edit"
                                data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                             <button type="button" class="delete btn-danger"
-                                    onclick="sendDataToModal('${employee.getEmployeeId()}','${employee.getEmployeeName()}')"
+                                    onclick="sendDataToModal('${product.getProductId()}','${product.getProductName()}')"
                                     data-toggle="modal" data-target="#exampleModalLong" style="padding: 0;border: none;background: none">
                                 <i class="material-icons text-danger">&#xE872;</i>
                             </button>
@@ -412,7 +415,7 @@
 </div>
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
      aria-hidden="true">
-    <form action="/employee?action=delete" method="post">
+    <form action="/product?action=delete" method="post">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">

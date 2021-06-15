@@ -1,4 +1,9 @@
 package model.service;
 
-public interface IDivision {
+import model.bean.Division;
+
+import java.util.List;
+
+public interface IDivisionService {
+    List<Division>selectAllDivision();
 }

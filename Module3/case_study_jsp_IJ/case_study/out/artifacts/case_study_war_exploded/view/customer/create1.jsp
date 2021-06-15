@@ -37,6 +37,9 @@
                 <label>Customer Name</label>
                 <input class="form-control" name="name" placeholder="Customer Name" type="text">
                 <label>Customer birthday</label>
+<%--                <div>--%>
+<%--                    <input type="date">--%>
+<%--                </div>--%>
                 <div class="row">
                     <div class="col-xs-4 col-md-4">
                         <input class="form-control" name="day" placeholder="Day" required="" autofocus="" type="text">
@@ -75,6 +78,8 @@
 
                 <label>Customer Type</label>
                 <br>
+                <select name="typeCustomer">
+                </select>
                 <label class="radio-inline">
                     <input name="type" id="inlineCheckbox3" value="diamond" type="radio">
                     Diamond

@@ -1,16 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: PC
-  Date: 6/8/2021
-  Time: 1:46 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
-$END$
+<div class="jumbotron text-center mt-3 container-fluid" style="margin-bottom:0">
+    <p>@Hoàng Phạm Đông</p>
+</div>
 </body>
 </html>

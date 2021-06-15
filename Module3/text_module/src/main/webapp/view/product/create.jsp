@@ -107,23 +107,51 @@
     <input class="btn btn-outline-success ml-3" type="submit" value="Back Home"/>
 </form>
 </div>
-<form action="/employee?action=create"method="post">
+<form action="/product?action=create"method="post">
     <div class="container">
         <p class="text-primary">${msg}</p>
         <div class="form-detail">
             <div class="form-info col-md-6 col-xs-12">
                 <div class="group">
 
-                    <label>Employee Name:</label>
+                    <label>Product Name:</label>
                     <br>
                     <input class="control-custom" type="text" required="required" name="name" value="${employeeInfo.getEmployeeName()}" />
                     <span class="bar"></span>
                     <p style="color: red">${msgName}</p>
                 </div>
                 <div class="group">
-                    <label>Birthday:</label>
+                    <label>Product Price:</label>
                     <br>
-                    <input class="control-custom" type="date" required="required" name="birthday" value="${employeeInfo.getEmployeeBirthday()}"/>
+                    <input class="control-custom" type="text" required="required" name="price" value="${employeeInfo.getEmployeeBirthday()}"/>
+                    <span class="bar"></span>
+
+                </div>
+                <div class="group">
+                    <label>Product Quantity:</label>
+                    <br>
+                    <input class="control-custom" type="text" required="required" name="quantity" value="${employeeInfo.getEmployeeBirthday()}"/>
+                    <span class="bar"></span>
+
+                </div>
+                <div class="group">
+                    <label>Color:</label>
+                    <br>
+                    <input class="control-custom" type="text" required="required" name="color" value="${employeeInfo.getEmployeeBirthday()}"/>
+                    <span class="bar"></span>
+
+                </div>
+                <div class="group">
+                    <label>description:</label>
+                    <br>
+                    <input class="control-custom" type="text" required="required" name="description" value="${employeeInfo.getEmployeeBirthday()}"/>
+                    <span class="bar"></span>
+
+                </div>
+                <div class="group">
+                    <label>Category:</label>
+                    <br>
+                    <input class="control-custom" type="text" required="required" name="category" value="${employeeInfo.getEmployeeBirthday()}"/>
                     <span class="bar"></span>
 
                 </div>

@@ -1,45 +1,91 @@
 package model.bean;
 
-public class Employee {
-    private int employeeId;
-    private String employeeName;
-    private String employeeBirthday;
+public class Product {
+    private int productId;
+    private String productName;
+    private Double productPrice;
+    private int productQuantity;
+    private String productColor;
+    private String productDescription;
+    private int categoryId;
 
-    public Employee() {
+    public Product(String productName, Double productPrice, int productQuantity, String productColor, String productDescription, int categoryId) {
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
+        this.productColor = productColor;
+        this.productDescription = productDescription;
+        this.categoryId = categoryId;
     }
 
-    public Employee(int employeeId, String employeeName, String employeeBirthday) {
-        this.employeeId = employeeId;
-        this.employeeName = employeeName;
-        this.employeeBirthday = employeeBirthday;
+    public Product() {
     }
 
-    public Employee(String employeeName, String employeeBirthday) {
-        this.employeeName = employeeName;
-        this.employeeBirthday = employeeBirthday;
+    public Product(int productId, String productName, Double productPrice, int productQuantity, String productColor, String productDescription, int categoryId) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productPrice = productPrice;
+        this.productQuantity = productQuantity;
+        this.productColor = productColor;
+        this.productDescription = productDescription;
+        this.categoryId = categoryId;
     }
 
-    public int getEmployeeId() {
-        return employeeId;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setEmployeeId(int employeeId) {
-        this.employeeId = employeeId;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
-    public String getEmployeeName() {
-        return employeeName;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setEmployeeName(String employeeName) {
-        this.employeeName = employeeName;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getEmployeeBirthday() {
-        return employeeBirthday;
+    public Double getProductPrice() {
+        return productPrice;
     }
 
-    public void setEmployeeBirthday(String employeeBirthday) {
-        this.employeeBirthday = employeeBirthday;
+    public void setProductPrice(Double productPrice) {
+        this.productPrice = productPrice;
+    }
+
+    public int getProductQuantity() {
+        return productQuantity;
+    }
+
+    public void setProductQuantity(int productQuantity) {
+        this.productQuantity = productQuantity;
+    }
+
+    public String getProductColor() {
+        return productColor;
+    }
+
+    public void setProductColor(String productColor) {
+        this.productColor = productColor;
+    }
+
+    public String getProductDescription() {
+        return productDescription;
+    }
+
+    public void setProductDescription(String productDescription) {
+        this.productDescription = productDescription;
+    }
+
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 }
+
+

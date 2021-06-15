@@ -22,41 +22,42 @@
         </c:if>
         <form method="post">
             <div class="form-group">
-                <label for="formGroupExampleInput">Employee Id:</label>
-                <input disabled type="text" value="${employee.getEmployeeId()}" name="id" class="form-control"
+                <label for="formGroupExampleInput">Product Id:</label>
+                <input disabled type="text" value="${product.getProductId()}" name="id" class="form-control"
                        id="formGroupExampleInput"
                 >
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">Employee Name:</label>
-                <input type="text" value="${employee.getEmployeeName()}" name="name" class="form-control"
+                <label for="formGroupExampleInput2">Product Name:</label>
+                <input type="text" value="${product.getProductName()}" name="name" class="form-control"
                        id="formGroupExampleInput2"
                        placeholder="Another input placeholder">
             </div>
             <div class="form-group">
-                <label for="formGroupExampleInput2">Employee Birthday:</label>
-                <input type="text" class="form-control" name="birthday" value="${employee.getEmployeeBirthday()}"
+                <label for="formGroupExampleInput2">Price:</label>
+                <input type="text" class="form-control" name="birthday" value="${product.getProductPrice()}"
                        id="formGroupExampleInput3"
                        placeholder="Another input placeholder">
             </div>
-<%--            <div class="form-group">--%>
-<%--                <label for="formGroupExampleInput2">Customer Gender:</label>--%>
-<%--                <input type="text" class="form-control" name="gender" value="${customer.customerGender}"--%>
-<%--                       id="formGroupExampleInput5"--%>
-<%--                       placeholder="Another input placeholder">--%>
-<%--            </div>--%>
-<%--            <div class="form-group">--%>
-<%--                <label for="formGroupExampleInput2">Customer Id Card</label>--%>
-<%--                <input type="text" class="form-control" name="card" value="${customer.customerIdCard}"--%>
-<%--                       id="formGroupExampleInput6"--%>
-<%--                       placeholder="Another input placeholder">--%>
-<%--            </div>--%>
-<%--            <div class="form-group">--%>
-<%--                <label for="formGroupExampleInput2">Customer Phone</label>--%>
-<%--                <input type="text" class="form-control" name="phone" value="${customer.customerPhone}"--%>
-<%--                       id="formGroupExampleInput7"--%>
-<%--                       placeholder="Another input placeholder">--%>
-<%--            </div>--%>
+
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Quantity:</label>
+                <input type="text" class="form-control" name="gender" value="${product.getProductQuantity()}"
+                       id="formGroupExampleInput5"
+                       placeholder="Another input placeholder">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Color</label>
+                <input type="text" class="form-control" name="card" value="${product.getProductColor()}"
+                       id="formGroupExampleInput6"
+                       placeholder="Another input placeholder">
+            </div>
+            <div class="form-group">
+                <label for="formGroupExampleInput2">Description</label>
+                <input type="text" class="form-control" name="phone" value="${product.getProductDescription()}"
+                       id="formGroupExampleInput7"
+                       placeholder="Another input placeholder">
+            </div>
 <%--            <div class="form-group">--%>
 <%--                <label for="formGroupExampleInput2">Customer Email</label>--%>
 <%--                <input type="text" class="form-control" name="email" value="${customer.customerEmail}"--%>

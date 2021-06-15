@@ -53,15 +53,15 @@
                         <label>Customer type</label>
                         <input type="text" class="form-control" placeholder="Address" name="type">
                     </div>
-                    <%--            <div class="form-group ml-3">--%>
-                    <%--                <label>Customer Type</label>--%>
-                    <%--                <select class="form-control ">--%>
-                    <%--                    <option value="" selected>Diamond</option>--%>
-                    <%--                    <option value="">Platinium</option>--%>
-                    <%--                    <option value="">Gold</option>--%>
-                    <%--                    <option value="">Silver</option>--%>
-                    <%--                    <option value="">Member</option>--%>
-                    <%--                </select>--%>
+                                <div class="form-group ml-3">
+<%--                                    <label>Customer Type</label>--%>
+<%--                                    <select class="form-control ">--%>
+<%--                                        <option value="" selected>Diamond</option>--%>
+<%--                                        <option value="">Platinium</option>--%>
+<%--                                        <option value="">Gold</option>--%>
+<%--                                        <option value="">Silver</option>--%>
+<%--                                        <option value="">Member</option>--%>
+<%--                                    </select>--%>
 
                 </div>
                 <div class="form-group">

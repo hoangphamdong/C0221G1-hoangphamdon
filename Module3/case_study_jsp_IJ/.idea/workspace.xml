@@ -2,43 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f87cfb1-490e-4d41-8e01-413935e9d44c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/index.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/customer/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/customer/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/employee/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/employee/edit.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/employee/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/employee/list1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/employee/view.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/error-404.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/footer.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/header.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/backgrou.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/nef.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/room.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/room1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/img/room2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/service/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case_study_jsp/src/main/webapp/view/service/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/controller/EmployeeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/controller/ServiceServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/bean/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/bean/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/repository/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/repository/ServiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/service/IEmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/service/IServiceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/service/Impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/src/model/service/Impl/ServiceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/web/view/service/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case_study/web/view/service/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case_study/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/bean/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/bean/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/bean/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/bean/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/repository/DivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/repository/EducationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/repository/PositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/IDivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/IEducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/impl/DivisionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/impl/EducationDegreeImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/java/model/service/impl/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/webapp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/webapp/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/webapp/view/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../exam/src/main/webapp/view/employee/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/controller/EmployeeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/model/bean/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/model/repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/model/repository/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/model/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/java/model/service/Impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/footer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/navbar.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/view/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/view/employee/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/view/employee/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../text_module/src/main/webapp/view/employee/view.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audit/addNEw.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audit/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../audit/table.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/customer/create.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/customer/create.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/customer/create1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/customer/create1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/employee/list1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/out/artifacts/case_study_war_exploded/view/employee/list1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/src/controller/EmployeeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/src/controller/EmployeeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/web/view/customer/create1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/web/view/customer/create1.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study/web/view/employee/list1.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/case_study/web/view/employee/list1.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +80,7 @@
       <workItem from="1622724238869" duration="17000" />
       <workItem from="1622729746153" duration="20000" />
       <workItem from="1622813682743" duration="19000" />
+      <workItem from="1623244098090" duration="16000" />
     </task>
     <servers />
   </component>
@@ -81,9 +88,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1622813698479">
+    <state x="421" y="97" key="FileChooserDialogImpl" timestamp="1623244111288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1622813698479" />
+    <state x="421" y="97" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1623244111288" />
   </component>
 </project>
