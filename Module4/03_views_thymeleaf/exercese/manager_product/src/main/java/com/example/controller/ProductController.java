@@ -34,7 +34,7 @@ public class ProductController {
     }
     @GetMapping("/edit/{id}")
     public String edit(@RequestParam int id,Model model){
-        model.addAttribute("product",productService.findById(id));
+        model.addAttribute("products",productService.findById(id));
         return "products/edit";
     }
     @PostMapping("/update")
@@ -61,8 +61,9 @@ public class ProductController {
     }
     @PostMapping("/search")
     public String search(@RequestParam String search,Model model){
-        model.addAttribute("product",productService.search(search));
-        return "redirect:/";
+        List<Product>productList=productService.search(search);
+        model.addAttribute("products",productList);
+        return "products/index";
     }
 
 
