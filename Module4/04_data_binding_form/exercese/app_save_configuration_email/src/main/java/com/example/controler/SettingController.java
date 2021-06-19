@@ -14,14 +14,14 @@ import org.springframework.web.servlet.ModelAndView;
 public class SettingController {
     @GetMapping(value = "/showForm")
     public String showFormSetting(Model model){
-        model.addAttribute("setting",new Setting());
+        model.addAttribute("showSetting",new Setting());
         model.addAttribute("languages" ,new String[]{"English","Vietnamese","Japanese","Chinese"});
         model.addAttribute("size",new String[]{"5","10","15","25","50","100"});
         return "/setting/showForm";
     }
     @PostMapping(value = "create-setting")
-    public ModelAndView creatSetting(@ModelAttribute("setting") Setting setting){
-        ModelAndView modelAndView=new ModelAndView("/setting/createSetting","setting",setting);
+    public ModelAndView creatSetting(@ModelAttribute("showSetting") Setting setting){
+        ModelAndView modelAndView=new ModelAndView("/setting/createSetting","createSetting",setting);
         return modelAndView;
     }
 

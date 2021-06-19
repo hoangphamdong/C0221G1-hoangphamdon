@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>Settings</h1>
-<form:form modelAttribute="setting" action="/setting/create-setting" method="post">
+<form:form modelAttribute="showSetting" action="/setting/create-setting" method="post">
     Languages:       <form:select path="language" items="${languages}"/> <br> <br>
     page Size: Show  <form:select path="pageSize" items="${size}"/> emails per page<br> <br>
     Spams filter:    <form:checkbox path="spamsFilter"/> Enable spans filter <br> <br>

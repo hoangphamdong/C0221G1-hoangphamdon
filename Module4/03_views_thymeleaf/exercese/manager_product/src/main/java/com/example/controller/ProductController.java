@@ -15,13 +15,13 @@ public class ProductController {
     @Autowired
     IProductService productService;
     @GetMapping(value = "")
-    public String index(Model model){
+    public String showIndex(Model model){
         List<Product>productList=productService.findAll();
         model.addAttribute("products",productList);
         return "products/index";
     }
     @GetMapping(value = "/create")
-    public String create(Model model){
+    public String showCreate(Model model){
         model.addAttribute("product",new Product());
         return "products/create";
     }
@@ -33,7 +33,7 @@ public class ProductController {
         return "redirect:/";
     }
     @GetMapping("/edit/{id}")
-    public String edit(@RequestParam int id,Model model){
+    public String showEdit(@RequestParam int id,Model model){
         model.addAttribute("products",productService.findById(id));
         return "products/edit";
     }
@@ -44,7 +44,7 @@ public class ProductController {
         return "redirect:/";
     }
     @GetMapping("/delete/{id}")
-    public String delete(@RequestParam int id,Model model){
+    public String showDelete(@RequestParam int id,Model model){
         model.addAttribute("product",productService.findById(id));
         return "products/delete";
     }
@@ -55,7 +55,7 @@ public class ProductController {
         return "redirect:/";
     }
     @GetMapping("/view/{id}")
-    public String view(@RequestParam int id, Model model){
+    public String showView(@RequestParam int id, Model model){
         model.addAttribute("product",productService.findById(id));
         return "products/view";
     }

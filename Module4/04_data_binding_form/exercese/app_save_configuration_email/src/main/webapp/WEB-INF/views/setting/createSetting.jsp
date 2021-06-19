@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-<p>language: ${setting.language}</p>
-<p>Page Size: ${setting.pageSize}</p>
-<p>Spams filter: ${setting.spamsFilter}</p>
-<p>signature: ${setting.signature}</p>
+<p>language: ${createSetting.language}</p>
+<p>Page Size: ${createSetting.pageSize}</p>
+<p>Spams filter: ${createSetting.spamsFilter}</p>
+<p>signature: ${createSetting.signature}</p>
 </body>
 </html>
