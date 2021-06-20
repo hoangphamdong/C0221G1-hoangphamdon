@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="071cbc7c-d336-4a97-9f93-900467bd5d16" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/java/com/example/controler/EmailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/java/com/example/service/IValidateService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/java/com/example/service/impl/ValidateServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/webapp/WEB-INF/views/success.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../02_spring_controller/practive/01_check_email/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/java/com/example/model/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/java/com/example/model/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/java/com/example/model/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/java/com/example/model/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/views/products/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/views/products/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/views/products/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/views/products/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/views/products/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/exercese/manager_product/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/java/com/example/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/java/com/example/model/bean/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/java/com/example/model/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/java/com/example/model/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/java/com/example/model/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/views/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../03_views_thymeleaf/practive/manager_data_customer/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/java/com/example/controler/SettingController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/java/com/example/model/bean/Setting.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/webapp/WEB-INF/views/setting/createSetting.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/webapp/WEB-INF/views/setting/showForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/exercese/app_save_configuration_email/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/java/com/example/controler/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/java/com/example/model/bean/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/webapp/WEB-INF/views/employee/create.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/webapp/WEB-INF/views/employee/info.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/01_form_and_data_binding/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/java/com/example/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/java/com/example/model/bean/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/java/com/example/model/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/java/com/example/model/service/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/java/com/example/model/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/views/user/error.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/views/user/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/views/user/user.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../04_data_binding_form/practive/02_login/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/java/com/example/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/java/com/example/model/bean/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/java/com/example/model/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/java/com/example/model/service/IProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/java/com/example/model/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/webapp/WEB-INF/views/product/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager_product/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../02_spring_controller/practive/untitled/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1uAbdKS6uDi2OinztARzrMoA8VU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="071cbc7c-d336-4a97-9f93-900467bd5d16" name="Default Changelist" comment="" />
+      <created>1624111426918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1624111426918</updated>
+      <workItem from="1624111428104" duration="58000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Project_Structure" timestamp="1624111454395">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1624111454395" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1624111455132">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1624111455132" />
+  </component>
+</project>
