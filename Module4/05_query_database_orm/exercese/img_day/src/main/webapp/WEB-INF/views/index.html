@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container mt-3">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5"><p id="nasa"></p></div>
+                <div class="col-md-7">
+                    <form th:action="@{/home}" th:object="${comment}" method="post">
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{rating}">Rating</label>
+                            <div class="col-md-10">
+                                <select class="form-control" th:field="*{rating}">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5" selected>5</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{author}">Author</label>
+                            <div class="col-md-10">
+                                <input type="text" th:field="*{author}" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-form-label col-md-2" th:for="*{message}">Feedback</label>
+                            <div class="col-md-10">
+                                <textarea th:field="*{message}" rows="5" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-grid gap-2">
+                                <button type="submit" class="btn btn-primary">Comment</button>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- /.col-md-7 -->
+            </div><!-- /.row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <ul th:each="c: ${comments}">
+                        <li>
+                            <div th:switch="*{c.rating}" class="d-inline">
+                                <span th:case="1" th:text="*{c.rating}" class="badge bg-light text-dark"></span>
+                                <span th:case="2" th:text="*{c.rating}" class="badge bg-info text-dark"></span>
+                                <span th:case="3" th:text="*{c.rating}" class="badge bg-warning text-dark"></span>
+                                <span th:case="4" th:text="*{c.rating}" class="badge bg-danger"></span>
+                                <span th:case="5" th:text="*{c.rating}" class="badge bg-success"></span>
+                            </div>
+                            <span th:text="*{c.getAuthor()}"></span>:
+                            <span th:text="*{c.message}"></span>
+                            <button class="btn btn-primary btn-sm" th:onclick="'likeBtn(this, '+*{c.id}+')'"
+                                    th:text="*{c.likeCount} ? *{c.likeCount} + ' likes' : '0 like'"
+                                    data-bs-toggle="tooltip" data-bs-placement="top" title="Like"></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

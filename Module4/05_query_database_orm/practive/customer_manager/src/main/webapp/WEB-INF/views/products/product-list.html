@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+    <link rel="stylesheet" href="/resources/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<a href="/product/create">Create Product</a>
+
+<table border="1">
+    <tr>
+        <th>#</th>
+        <th>Product Name</th>
+        <th>Product Price</th>
+        <th>Product Description</th>
+        <th>Producer</th>
+        <th>Action</th>
+    </tr>
+    <tr th:each="row,startRow : ${listProduct}">
+        <td th:text="${startRow.count}"></td>
+        <td th:text="${row.getName()}"></td>
+        <td th:text="${row.getPrice()}"></td>
+        <td th:text="${row.getDescription()}"></td>
+        <td th:text="${row.getProducer()}"></td>
+    </tr>
+</table>
+</body>
+</html>
