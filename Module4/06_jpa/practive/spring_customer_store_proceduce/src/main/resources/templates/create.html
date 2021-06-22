@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Create New Customer</h1>
+<div>
+    <a href="/customer/list">Back list customer</a>
+</div>
+<form action="/customer/save" novalidate="novalidate" method="post">
+    <div>
+        <td>Last Name:</td>
+        <td><input type="text" name="last"></td>
+    </div>
+    <div>
+        <td>First Name:</td>
+        <td><input type="text" name="first"></td>
+    </div>
+
+    <input type="submit"value="update">
+
+</form>
+</body>
+</html>
