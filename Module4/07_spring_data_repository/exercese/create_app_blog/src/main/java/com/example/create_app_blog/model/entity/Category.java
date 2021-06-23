@@ -1,6 +1,7 @@
 package com.example.create_app_blog.model.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Entity
@@ -11,6 +12,8 @@ public class Category {
     private Long id;
     private String name;
 
+    @OneToMany(targetEntity = Blog.class)
+    private List<Blog>blogList;
     public Category() {
     }
 

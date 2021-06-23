@@ -6,7 +6,7 @@
     <title>Title</title>
 </head>
 <body>
-<a href="/blog">Back to Post list</a>
+<a href="/blog/list">Back to Post list</a>
 <th:block th:if="${message}">
   <p th:text="${message}"></p>
 </th:block>
@@ -19,6 +19,12 @@
   <div>
     <label>Content: </label>
     <input type="text" th:field="*{content}">
+  </div>
+  <div>
+    <label>Category: </label>
+    <select th:field="*{category}">
+      <option th:each="c : ${categorys}" th:value="${c.id}" th:text="${c.name}"></option>
+    </select>
   </div>
   <input type="submit" value="Create">
 </form>

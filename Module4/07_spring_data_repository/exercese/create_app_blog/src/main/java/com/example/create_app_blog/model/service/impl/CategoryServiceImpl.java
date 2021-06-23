@@ -4,6 +4,8 @@ import com.example.create_app_blog.model.entity.Category;
 import com.example.create_app_blog.model.repository.ICategoryRepository;
 import com.example.create_app_blog.model.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -12,6 +14,11 @@ import java.util.Optional;
 public class CategoryServiceImpl implements ICategoryService {
     @Autowired
     ICategoryRepository categoryRepository;
+
+    @Override
+    public Page<Category> findAll(Pageable pageable) {
+        return null;
+    }
 
     @Override
     public Iterable<Category> findAll() {
@@ -31,5 +38,10 @@ public class CategoryServiceImpl implements ICategoryService {
     @Override
     public void remove(Long id) {
         categoryRepository.deleteById(id);
+    }
+
+    @Override
+    public Page<Category> findAllByTitleContaining(String name,Pageable pageable) {
+        return null;
     }
 }
