@@ -5,23 +5,23 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<h1>Create province</h1>
+<h1>Edit province</h1>
 <p>
-  <a href="/province/list">Province list</a>
+  <a href="/category/list">Province list</a>
 </p>
 <th:block th:if="${message}">
   <p th:text="${message}"></p>
 </th:block>
-<form th:action="@{/province/create}" th:object="${province}" method="post">
+<form th:action="@{/category/update}" th:object="${category}" method="post">
+  <input th:type="hidden" name="id" th:field="*{id}">
   <table>
     <tr>
-      <td>Name:</td>
+      <td>First name:</td>
       <td><input type="text" th:field="*{name}"/></td>
     </tr>
     <tr>
       <td></td>
-      <td><input type="submit" value="Create province"></td>
+      <td><input type="submit" value="Update province"></td>
     </tr>
   </table>
 </form>

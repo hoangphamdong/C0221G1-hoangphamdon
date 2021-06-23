@@ -1,13 +1,9 @@
 package com.example.create_app_blog.model.service;
 
+import com.example.create_app_blog.model.entity.Blog;
+
 import java.util.Optional;
 
-public interface IBlogService <T>{
-    Iterable<T> findAll();
+public interface IBlogService extends Service<Blog>{
 
-    Optional findById(int id);
-
-    void save(T model);
-
-    void remove(int id);
 }

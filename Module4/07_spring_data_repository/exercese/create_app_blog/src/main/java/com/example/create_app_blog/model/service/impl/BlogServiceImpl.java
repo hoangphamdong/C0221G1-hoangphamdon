@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
-public class BlogServiceImpl implements IBlogService<Blog> {
+public class BlogServiceImpl implements IBlogService {
     @Autowired
     IBlogRepository blogRepository;
 
@@ -19,7 +19,7 @@ public class BlogServiceImpl implements IBlogService<Blog> {
     }
 
     @Override
-    public Optional findById(int id) {
+    public Optional findById(Long id) {
         return blogRepository.findById(id);
     }
 
@@ -29,7 +29,7 @@ public class BlogServiceImpl implements IBlogService<Blog> {
     }
 
     @Override
-    public void remove(int id) {
+    public void remove(Long id) {
         blogRepository.deleteById(id);
     }
 }
