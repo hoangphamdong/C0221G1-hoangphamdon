@@ -29,6 +29,12 @@
   <label>Producer</label>
   <input type="text" th:field="*{producer}"/>
   </div>
+  <select th:field="*{typeProduct}">
+    <option th:each="type : ${typeProducts}"
+            th:value="${type.id}"
+            th:text="${type.name}">
+    </option>
+  </select>
   <input type="submit" value="save">
 </form>
 </body>

@@ -15,6 +15,10 @@ public class Product {
     private String description;
     private String producer;
 
+    @ManyToOne
+    @JoinColumn(name = "type_product_id")
+    private TypeProduct typeProduct;
+
     public Product() {
     }
 
@@ -64,5 +68,13 @@ public class Product {
 
     public void setProducer(String producer) {
         this.producer = producer;
+    }
+
+    public TypeProduct getTypeProduct() {
+        return typeProduct;
+    }
+
+    public void setTypeProduct(TypeProduct typeProduct) {
+        this.typeProduct = typeProduct;
     }
 }

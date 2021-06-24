@@ -15,6 +15,9 @@
         <input type="submit" value="Search"/>
     </form>
 </div>
+<div th:if="${message}">
+    <span th:text="${message}"></span>
+</div>
 <table border="1">
     <tr>
         <th>#</th>
@@ -22,6 +25,7 @@
         <th>Price</th>
         <th>Description</th>
         <th>producer</th>
+        <th>Type</th>
         <th colspan="3">Action</th>
     </tr>
     <tr th:if="${products.hasContent()}" th:each="row,starRow : ${products}">
@@ -30,9 +34,10 @@
         <td th:text="${row.price}"></td>
         <td th:text="${row.description}"></td>
         <td th:text="${row.producer}"></td>
+        <td th:text="${row.typeProduct.name}"></td>
         <td><a th:href="@{/product/view/__${row.getId()}__}">view</a></td>
-        <td><a th:href="@{/product/view/__${row.getId()}__}">edit</a></td>
-        <td><a th:href="@{/product/view/__${row.getId()}__}">delete</a></td>
+        <td><a th:href="@{/product/edit/__${row.getId()}__}">edit</a></td>
+        <td><a th:href="@{/product/delete/__${row.getId()}__}">delete</a></td>
     </tr>
     <tr th:if="${!products.hasContent()}">
         not find
