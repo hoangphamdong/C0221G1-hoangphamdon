@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <a href="/product/list">
+        Back to list
+    </a>
+</div>
+<fieldset>
+<legend th:text="${product.name}" style="color: blueviolet"></legend>
+<p>Name: <span th:text="${product.name}"></span></p>
+<p>Price: <span th:text="${product.price}"></span></p>
+<p>Description: <span th:text="${product.description}"></span></p>
+<p>producer: <span th:text="${product.producer}"></span></p>
+</fieldset>
+</body>
+</html>
