@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <a href="/product/list">Back to list</a>
+</div>
+<div th:if="${message}">
+  <span th:text="${message}"></span>
+</div>
+<form th:action="@{/product/create}" method="post" th:object="${product}">
+  <div>
+  <label>Name</label>
+  <input type="text" th:field="*{name}"/>
+  </div>
+  <div>
+  <label>Price</label>
+  <input type="text" th:field="*{price}"/>
+  </div>
+  <div>
+  <label>Description</label>
+  <input type="text" th:field="*{description}"/>
+  </div>
+  <div>
+  <label>Producer</label>
+  <input type="text" th:field="*{producer}"/>
+  </div>
+  <select th:field="*{typeProduct}">
+    <option th:each="type : ${typeProducts}"
+            th:value="${type.id}"
+            th:text="${type.name}">
+    </option>
+  </select>
+  <input type="submit" value="save">
+</form>
+</body>
+</html>
