@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4d334a45-9b2f-480a-ba90-483832e29263" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/logs/Log.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/entity/BookEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/entity/UserRentEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/UserRentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/UserRentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/UserRentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/return.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/practive/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/practive/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="exercise@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="exercise@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="build.gradle" />
+        <option value="log4j.properties" />
+        <option value="ApplicationConfig" />
+        <option value="ApplicationInitializer" />
+        <option value="Interface" />
+        <option value="Log" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1d77EKW7TwhmJDcFeLlHDBJDRse" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JPA.DatabaseSchemaImportDialog" value="8380e6b3-f622-4682-a612-05cbf3f1eb9a" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
+    </key>
+    <key name="ImportMappingsDialog.RecentPackages">
+      <recent name="model" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\codegym\module4\btUngDungMuonSach\src\main\java" />
+    </key>
+  </component>
+  <component name="Regex">
+    <option name="pos1" value="218" />
+    <option name="pos2" value="218" />
+    <option name="pos3" value="162" />
+    <option name="pos4" value="444" />
+    <option name="pos5" value="162" />
+    <option name="autoUpdate" value="true" />
+    <option name="referenceOn" value="false" />
+    <option name="referencePos" value="0" />
+    <option name="showLabels" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 9.0.351" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.351" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="Gradle : org.example : btUngDungMuonSach-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_btUngDungMuonSach" />
+        <option name="HTTP_PORT" value="8888" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52213" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : org.example : btUngDungMuonSach-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d334a45-9b2f-480a-ba90-483832e29263" name="Default Changelist" comment="" />
+      <created>1591764164527</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591764164527</updated>
+      <workItem from="1591764167788" duration="15467000" />
+      <workItem from="1591794666064" duration="9000" />
+      <workItem from="1591794711482" duration="2000" />
+      <workItem from="1592116316399" duration="5934000" />
+      <workItem from="1624874195849" duration="1610000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="551" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591772208543">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="551" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591772208543" />
+    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1592121632716">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592121632716" />
+    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1591778524671" />
+    <state x="623" y="241" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1591779642102">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="241" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591779642102" />
+    <state x="591" y="0" width="1137" height="981" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1591782587643">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="591" y="0" width="1137" height="981" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591782587643" />
+    <state x="560" y="427" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591780094136">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="560" y="427" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591780094136" />
+    <state x="623" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591779352287">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591779352287" />
+    <state width="510" height="582" key="DebuggerActiveHint" timestamp="1592119119964">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="510" height="582" key="DebuggerActiveHint/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592119119964" />
+    <state width="463" height="582" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1591783715302" />
+    <state width="1864" height="394" key="GridCell.Tab.0.bottom" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
+    <state width="1864" height="394" key="GridCell.Tab.0.center" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543125" />
+    <state width="1864" height="394" key="GridCell.Tab.0.left" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543125" />
+    <state width="1864" height="394" key="GridCell.Tab.0.right" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
+    <state width="1864" height="394" key="GridCell.Tab.1.bottom" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.1.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
+    <state width="1864" height="394" key="GridCell.Tab.1.center" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.1.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
+    <state width="1864" height="394" key="GridCell.Tab.1.left" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.1.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
+    <state width="1864" height="394" key="GridCell.Tab.1.right" timestamp="1592122019556">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.1.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
+    <state width="1864" height="483" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
+    <state width="1864" height="394" key="GridCell.Tab.2.bottom" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.2.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
+    <state width="1864" height="394" key="GridCell.Tab.2.center" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.2.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
+    <state width="1864" height="394" key="GridCell.Tab.2.left" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.2.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
+    <state width="1864" height="394" key="GridCell.Tab.2.right" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.2.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
+    <state width="1864" height="394" key="GridCell.Tab.3.bottom" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.3.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543129" />
+    <state width="1864" height="394" key="GridCell.Tab.3.center" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.3.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
+    <state width="1864" height="394" key="GridCell.Tab.3.left" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.3.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
+    <state width="1864" height="394" key="GridCell.Tab.3.right" timestamp="1592122019557">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1864" height="394" key="GridCell.Tab.3.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
+    <state width="1864" height="483" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
+    <state x="347" y="56" key="SettingsEditor" timestamp="1591765201032">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="347" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1591765201032" />
+    <state width="969" height="525" key="XDebugger.FullValuePopup" timestamp="1591779913368">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="969" height="525" key="XDebugger.FullValuePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1591779913368" />
+    <state x="1953" y="0" width="1412" height="995" key="dock-window-1" timestamp="1592121970317">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="1953" y="0" width="1412" height="995" key="dock-window-1/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592121970317" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/BookController.java</url>
+          <line>101</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/controller/BookController.java</url>
+          <line>103</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="currentUserRent.getBookByBookId()" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
