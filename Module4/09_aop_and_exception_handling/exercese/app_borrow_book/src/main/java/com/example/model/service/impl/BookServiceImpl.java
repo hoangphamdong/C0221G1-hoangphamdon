@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
+import org.yaml.snakeyaml.events.Event;
 
 import java.util.Optional;
 
@@ -23,7 +24,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Optional findById(Integer id) {
+    public Optional<BookEntity> findById(Integer id) {
         return bookRepository.findById(id);
     }
 

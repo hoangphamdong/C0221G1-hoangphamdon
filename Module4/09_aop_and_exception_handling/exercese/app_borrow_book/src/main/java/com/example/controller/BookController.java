@@ -59,18 +59,19 @@ public class BookController {
     @RequestMapping(value = "/rent/{id}", method = RequestMethod.POST)
     public ModelAndView rentBook(@PathVariable("id") Integer id, @ModelAttribute("user") UserRentEntity userRent, Pageable pageable) {
         ModelAndView rent = null;
-        Optional book;
+        Optional<BookEntity> book;
+
 
         try {
             book = bookService.findById(id);
-            if (book.getQuantity() > 0) {
+            if (book.> 0) {
 
                 userRent.setRandomCode();
                 userRent.setBookByBookId(book);
                 userRent.setStatus(1);
                 userRentService.save(userRent);
 
-                book.setQuantity(book.getQuantity() - 1);
+                book.getClass().setQuantity(book.get() - 1);
                 bookService.save(book);
 
                 rent = loadIndex(pageable);

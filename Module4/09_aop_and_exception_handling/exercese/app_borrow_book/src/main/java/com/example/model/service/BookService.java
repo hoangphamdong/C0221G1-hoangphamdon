@@ -10,7 +10,7 @@ import java.util.Optional;
 public interface BookService {
     public Page<BookEntity> findAll(Pageable pageable);
 
-    public Optional findById(Integer id);
+    public Optional<BookEntity> findById(Integer id);
 
     public void save(BookEntity bookEntity);
 

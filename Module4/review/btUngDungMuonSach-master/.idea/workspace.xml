@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d334a45-9b2f-480a-ba90-483832e29263" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/logs/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/entity/BookEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/entity/UserRentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/UserRentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/UserRentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/UserRentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/return.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/resources/templates/views/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/exercese/app_borrow_book/src/main/java/com/example/model/service/impl/BookServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../09_aop_and_exception_handling/practive/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../09_aop_and_exception_handling/practive/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/BookRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,17 +132,6 @@
     <option name="showLabels" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Tomcat 9.0.351" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.351" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -222,135 +204,13 @@
       <workItem from="1591794711482" duration="2000" />
       <workItem from="1592116316399" duration="5934000" />
       <workItem from="1624874195849" duration="1610000" />
+      <workItem from="1624885647299" duration="15000" />
+      <workItem from="1624886023398" duration="1097000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="551" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591772208543">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="551" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591772208543" />
-    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1592121632716">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592121632716" />
-    <state x="717" y="153" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1591778524671" />
-    <state x="623" y="241" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1591779642102">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="623" y="241" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591779642102" />
-    <state x="591" y="0" width="1137" height="981" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1591782587643">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="591" y="0" width="1137" height="981" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591782587643" />
-    <state x="560" y="427" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591780094136">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="560" y="427" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591780094136" />
-    <state x="623" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591779352287">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="623" y="203" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1591779352287" />
-    <state width="510" height="582" key="DebuggerActiveHint" timestamp="1592119119964">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="510" height="582" key="DebuggerActiveHint/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592119119964" />
-    <state width="463" height="582" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1591783715302" />
-    <state width="1864" height="394" key="GridCell.Tab.0.bottom" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.0.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
-    <state width="1864" height="394" key="GridCell.Tab.0.center" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.0.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543125" />
-    <state width="1864" height="394" key="GridCell.Tab.0.left" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.0.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543125" />
-    <state width="1864" height="394" key="GridCell.Tab.0.right" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.0.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
-    <state width="1864" height="394" key="GridCell.Tab.1.bottom" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.1.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
-    <state width="1864" height="394" key="GridCell.Tab.1.center" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.1.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
-    <state width="1864" height="394" key="GridCell.Tab.1.left" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.1.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
-    <state width="1864" height="394" key="GridCell.Tab.1.right" timestamp="1592122019556">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.1.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019556" />
-    <state width="1864" height="483" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543126" />
-    <state width="1864" height="394" key="GridCell.Tab.2.bottom" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.2.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.2.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
-    <state width="1864" height="394" key="GridCell.Tab.2.center" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.2.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.2.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
-    <state width="1864" height="394" key="GridCell.Tab.2.left" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.2.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.2.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
-    <state width="1864" height="394" key="GridCell.Tab.2.right" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.2.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.2.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543127" />
-    <state width="1864" height="394" key="GridCell.Tab.3.bottom" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.3.bottom/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.3.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543129" />
-    <state width="1864" height="394" key="GridCell.Tab.3.center" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.3.center/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.3.center/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
-    <state width="1864" height="394" key="GridCell.Tab.3.left" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.3.left/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.3.left/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
-    <state width="1864" height="394" key="GridCell.Tab.3.right" timestamp="1592122019557">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="1864" height="394" key="GridCell.Tab.3.right/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592122019557" />
-    <state width="1864" height="483" key="GridCell.Tab.3.right/0.0.1920.1032@0.0.1920.1032" timestamp="1591784543128" />
-    <state x="347" y="56" key="SettingsEditor" timestamp="1591765201032">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="347" y="56" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1591765201032" />
-    <state width="969" height="525" key="XDebugger.FullValuePopup" timestamp="1591779913368">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state width="969" height="525" key="XDebugger.FullValuePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1591779913368" />
-    <state x="1953" y="0" width="1412" height="995" key="dock-window-1" timestamp="1592121970317">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="1953" y="0" width="1412" height="995" key="dock-window-1/0.0.1920.1032/1920.0.1920.1080@0.0.1920.1032" timestamp="1592121970317" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
