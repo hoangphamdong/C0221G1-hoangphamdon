@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+<div class="container">
+  <form action="/blog/search" method="get">
+    <input type="text" name="keyword" id="inpKeyword"/>
+    <input type="submit" value="Search" id="sbKeyword">
+  </form>
+  <h1 class="text-center">Blog List</h1>
+  <a th:href="@{/blog/create}">Create new Blog</a>
+  <br>
+  <br>
+  <a th:href="@{/category}">list category</a>
+  <h2 th:text="${message}" style="color: red"></h2>
+  <table class="table" border="1">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Title</th>
+      <th>Write Date</th>
+      <th>Category Id</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody id="minhdeptrai">
+    <th:block th:each="blog : ${blogList}">
+      <tr>
+        <td th:text="${blog.id}"></td>
+        <td><a th:href="@{/blog/{id}/view(id=${blog.id})}" th:text="${blog.name}"></a></td>
+        <td th:text="${blog.title}"></td>
+        <td th:text="${blog.writeDate}"></td>
+        <td th:text="${blog.category.id}"></td>
+        <td>
+          <a th:href="@{/blog/{id}/update(id=${blog.id})}" class="btn btn-outline-primary">Edit</a>
+        </td>
+        <td><a th:href="@{/blog/{id}/delete(id=${blog.id})}" class="btn btn-outline-danger">Delete</a>
+        </td>
+      </tr>
+    </th:block>
+    </tbody>
+  </table>
+  <div>
+    <a th:href="@{'/blog'(page=${blogList.number - 1})}" th:if="${blogList.hasPrevious()}">Previous</a>
+    <span th:text="${blogList.number + 1}"></span>/<span th:text="${blogList.totalPages}"></span>
+    <a th:href="@{'/blog'(page=${blogList.number + 1})}" th:if="${blogList.hasNext()}">Next</a>
+  </div>
+</div>
+
+<button id="btnLoad">Load</button>
+
+</body>
+
+<script>
+  let pageBlog = 0;
+  $("#btnLoad").click(function() {
+    $.ajax({
+      type: "GET",
+      url: "http://localhost:8080/api/blog/list?page=" + (pageBlog),
+      dataType: "json",
+      success: function(result){
+        let list=result.content;
+        let resultHTML="";
+        console.log("OK");
+        console.log(result)
+        for (let i=0;i<list.length;i++){
+          resultHTML += "<tr>";
+          resultHTML += "<th scope='row'>" + (i+1) + "</th>";
+          resultHTML += "<td>" + list[i].name + "</td>";
+          resultHTML += "<td>" + list[i].title + "</td>";
+          resultHTML += "<td>" + list[i].content + "</td>";
+          resultHTML += "<td>" + list[i].writeDate + "</td>";
+          resultHTML += "</tr>";
+        }
+        $("#minhdeptrai").html(resultHTML);
+
+      },
+      error: function(result) {
+
+      }
+    });
+  });
+
+  $("#sbKeyword").click(function () {
+    $.ajax({
+      type: "GET",
+      url: "http://localhost:8080/blog/search?keyword=" + $("#inpKeyword").val(),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: function(blogList){
+        for (let i = 0; i < blogList.length; i++) {
+          data +=
+                  '<p>' + blogList[i].id + '</p>' +
+                  '<p>' + blogList[i].name + '</p>' +
+                  '<p>' + blogList[i].title + '</p>' +
+                  '<p>' + blogList[i].writeDate + '</p>' +
+                  '<p>' + blogList[i].category.id + '</p>';
+        }
+        $("#tableList").html(data);
+      },
+      error: function(result) {
+      }
+    });
+  });
+
+</script>
+</body>
+</html>
