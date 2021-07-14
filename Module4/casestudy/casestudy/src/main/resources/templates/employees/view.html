@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .container-fluid {
+            width: 700px;
+            margin-top: 30px;
+        }
+
+        p {
+            height: 40px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="bg-success text-center">DETAIL EMPLOYEE</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div>
+                    <label>ID : </label>
+                    <input th:text="${employee.id}" class="form-control" hidden>
+                </div>
+                <div class="form-group">
+                    <label>Name : </label>
+                    <input type="hidden" th:text="${employee.name}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Birthday : </label>
+                    <input type="hidden" th:text="${employee.birthday}">
+                </div>
+                <div class="form-group">
+                    <label>ID Card : </label>
+                    <input type="hidden" th:text="${employee.idCard}" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Salary : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.salary}">
+                </div>
+                <div class="form-group">
+                    <label>Phone : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.phone}">
+                </div>
+                <div class="form-group">
+                    <label>Email : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.email}">
+                </div>
+                <div class="form-group">
+                    <label>Address : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.address}">
+                </div>
+                <div class="form-group">
+                    <label>Position : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.position.namePosition}">
+                </div>
+                <div class="form-group">
+                    <label>Education Degree : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.educationDegree.educationDegreeName}">
+                </div>
+                <div class="form-group">
+                    <label>Division: </label>
+                    <input type="hidden" class="form-control" th:text="${employee.division.divisionName}">
+                </div>
+                <div class="form-group">
+                    <label>User : </label>
+                    <input type="hidden" class="form-control" th:text="${employee.user.username}">
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <a href="/employees/list" class="btn btn-primary">Back to list employee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

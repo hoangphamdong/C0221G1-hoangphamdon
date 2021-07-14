@@ -5,6 +5,7 @@ import com.example.model.entity.Customer;
 import com.example.model.entity.CustomerType;
 import com.example.model.service.ICustomerService;
 import com.example.model.service.ICustomerTypeService;
+import com.example.model.service.impl.CustomerServiceImpl;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -29,20 +30,45 @@ public class CustomerController {
     @Autowired
     private ICustomerTypeService customerTypeService;
 
+
     @ModelAttribute("customerTypes")
     public Iterable<CustomerType> customerTypes() {
         return this.customerTypeService.findAll();
     }
 
-    @GetMapping(value ={ "/list",""})
+    //    @GetMapping(value = {"/list", ""})
+//    public ModelAndView showListCustomer(@PageableDefault(size = 2) Pageable pageable,
+//                                         @RequestParam Optional<String> keyword) {
+//        String keywordValue = "";
+//        if (keyword.isPresent()) {
+//            keywordValue = keyword.get();
+//        }
+//        Page<Customer> customers = customerService.pageAndSearch(pageable, keywordValue);
+//        ModelAndView modelAndView = new ModelAndView("customers/list");
+//        modelAndView.addObject("customers", customers);
+//        modelAndView.addObject("keywordValue", keywordValue);
+//        return modelAndView;
+//    }
+    @GetMapping(value = {"/list", ""})
     public ModelAndView showListCustomer(@PageableDefault(size = 2) Pageable pageable,
+                                         @RequestParam(name = "birthday") Optional<String> birthday,
+                                         @RequestParam(name = "type") Optional<String> type,
                                          @RequestParam Optional<String> keyword) {
         String keywordValue = "";
+        String birthdayValue = "";
+        String typeValue = "";
+
         if (keyword.isPresent()) {
             keywordValue = keyword.get();
         }
-        Page<Customer> customers = customerService.pageAndSearch(pageable, keywordValue);
+        if (birthday.isPresent()) {
+            birthdayValue = birthday.get();
+        }
+        if (type.isPresent()) {
+            typeValue = type.get();
+        }
         ModelAndView modelAndView = new ModelAndView("customers/list");
+        Page<Customer> customers = customerService.getCustomerByNameBirthdayAndType(keywordValue, birthdayValue, typeValue, pageable);
         modelAndView.addObject("customers", customers);
         modelAndView.addObject("keywordValue", keywordValue);
         return modelAndView;

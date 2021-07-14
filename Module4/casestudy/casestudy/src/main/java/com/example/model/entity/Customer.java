@@ -2,6 +2,7 @@ package com.example.model.entity;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity(name = "customer")
 public class Customer {
@@ -30,7 +31,24 @@ public class Customer {
     @JoinColumn(name = "customer_type_id", referencedColumnName = "id")
     private CustomerType customerType;
 
+    @OneToMany(mappedBy = "customer")
+    private List<Contract>contracts;
+
     public Customer() {
+    }
+
+    public Customer(Integer id, String code, String name, String birthday, String gender, String idCard, String phone, String email, String address, CustomerType customerType, List<Contract> contracts) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.birthday = birthday;
+        this.gender = gender;
+        this.idCard = idCard;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+        this.customerType = customerType;
+        this.contracts = contracts;
     }
 
     public Integer getId() {
@@ -111,5 +129,13 @@ public class Customer {
 
     public void setCustomerType(CustomerType customerType) {
         this.customerType = customerType;
+    }
+
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
     }
 }

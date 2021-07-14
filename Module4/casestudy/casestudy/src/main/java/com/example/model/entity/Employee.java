@@ -1,6 +1,7 @@
 package com.example.model.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "employee")
@@ -17,7 +18,7 @@ public class Employee {
     private String address;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "position_id",referencedColumnName = "idPosition")
+    @JoinColumn(name = "position_id",referencedColumnName = "id_position")
     private Position position;
 
     @ManyToOne(cascade = CascadeType.PERSIST)
@@ -28,21 +29,13 @@ public class Employee {
     @JoinColumn(name = "division_id",referencedColumnName = "division_id")
     private Division division;
 
-    public Employee() {
-    }
+//    @ManyToOne(cascade = CascadeType.PERSIST)
+//    @JoinColumn(name = "username",referencedColumnName = "User_Name")
+//    private AppUser appUser;
 
-    public Employee(Integer id, String name, String birthday, String idCard, Double salary, String phone, String email, String address, Position position, EducationDegree educationDegree, Division division) {
-        this.id = id;
-        this.name = name;
-        this.birthday = birthday;
-        this.idCard = idCard;
-        this.salary = salary;
-        this.phone = phone;
-        this.email = email;
-        this.address = address;
-        this.position = position;
-        this.educationDegree = educationDegree;
-        this.division = division;
+    @OneToMany(mappedBy = "employee")
+    private List<Contract>contracts;
+    public Employee() {
     }
 
     public Integer getId() {
@@ -131,5 +124,13 @@ public class Employee {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public List<Contract> getContracts() {
+        return contracts;
+    }
+
+    public void setContracts(List<Contract> contracts) {
+        this.contracts = contracts;
     }
 }

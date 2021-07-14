@@ -15,6 +15,7 @@ import java.util.Optional;
 public class CustomerServiceImpl implements ICustomerService {
     @Autowired
     ICustomerRepository customerRepository;
+
     @Override
     public Iterable<Customer> findAll() {
         return customerRepository.findAll();
@@ -38,5 +39,21 @@ public class CustomerServiceImpl implements ICustomerService {
     @Override
     public Page<Customer> pageAndSearch(Pageable pageable, String keyword) {
         return customerRepository.getCustomerBySearchingName(pageable, "%" + keyword + "%");
+    }
+
+    @Override
+    public Page<Customer> pageAndSearchBirthday( String keyword, String birthday,Pageable pageable) {
+        return customerRepository.getCustomerBySearchingNameBirthday(pageable,keyword,birthday);
+    }
+
+
+    @Override
+    public Page<Customer> getCustomerByNameBirthdayAndType(String name, String birthday, String type, Pageable pageable) {
+        return customerRepository.findCustomerByNameBirthdayAndType("%"+name+"%","%"+birthday+"%","%"+type+"%",pageable);
+    }
+
+    @Override
+    public Page<Customer> getCustomerByNameBirthdayAndType1(String name, String birthday, Integer type, Pageable pageable) {
+        return customerRepository.findCustomerByNameContainingAndBirthdayContainingAndCustomerType(name,birthday,type,pageable);
     }
 }

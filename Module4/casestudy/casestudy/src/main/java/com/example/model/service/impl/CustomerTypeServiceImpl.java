@@ -39,4 +39,9 @@ public class CustomerTypeServiceImpl implements ICustomerTypeService {
     public Page<CustomerType> pageAndSearch(Pageable pageable, String keyword) {
         return customerTypeRepository.getCustomerTypeSearchingName(pageable, "%" + keyword + "%");
     }
+
+    @Override
+    public Page<CustomerType> pageAndSearchBirthday( String keyword, String birthday,Pageable pageable) {
+        return null ;
+    }
 }

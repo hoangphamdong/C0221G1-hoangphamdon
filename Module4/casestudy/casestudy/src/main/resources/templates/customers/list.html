@@ -59,29 +59,19 @@
                                 <label>Name</label>
                                 <input name="keyword" type="text" class="form-control">
                             </div>
+                            <div class="filter-group">
+                                <label>Birthday</label>
+                                <input type="date" name="birthday">
+                            </div>
+                            <div class="filter-group">
+                                <label>Type</label>
+                                <select class="form-control" name="type">
+                                    <option value="">Lựa chon Type</option>
+                                    <option th:each="t:${customerTypes}"
+                                            th:value="${t.id}" th:text="${t.name}"></option>
+                                </select>
+                            </div>
                         </form>
-                        <div class="filter-group">
-                            <label>Location</label>
-                            <select class="form-control">
-                                <option>All</option>
-                                <option>Berlin</option>
-                                <option>London</option>
-                                <option>Madrid</option>
-                                <option>New York</option>
-                                <option>Paris</option>
-                            </select>
-                        </div>
-                        <div class="filter-group">
-                            <label>Status</label>
-                            <select class="form-control">
-                                <option>Any</option>
-                                <option>Delivered</option>
-                                <option>Shipped</option>
-                                <option>Pending</option>
-                                <option>Cancelled</option>
-                            </select>
-                        </div>
-                        <span class="filter-icon"><i class="fa fa-filter"></i></span>
                     </div>
                 </div>
             </div>
