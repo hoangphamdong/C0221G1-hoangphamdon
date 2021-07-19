@@ -89,8 +89,8 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr th:each="row,startRow:${customers}">
-                    <td th:text="${startRow.count}"></td>
+                <tr  th:each="row,startRow:${customers}">
+                    <td th:text="${startRow.count+customers.number*customers.size -1}"></td>
                     <td>
                         <a th:href="@{/customers/view/__${row.id}__}"><img src="/img/images.png" class="avatar"
                                                                            alt="Avatar">
@@ -113,7 +113,6 @@
                         </a>
                     </td>
                 </tr>
-                </tbody>
             </table>
             <div class="clearfix">
                 <div class="hint-text">

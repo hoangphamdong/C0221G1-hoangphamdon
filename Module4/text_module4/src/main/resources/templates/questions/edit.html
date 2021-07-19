@@ -1,0 +1,69 @@
+<html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <title>Edit</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .container-fluid {
+            width: 700px;
+            margin-top: 30px;
+        }
+
+        p {
+            height: 40px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div class="container-fluid">
+        <form method="post" th:action="@{/question/edit}" th:object="${question}">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="bg-success text-center">EDIT QUEST</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <input th:field="*{id}" class="form-control" id="exampleInputEmail"
+                           aria-describedby="emailHelp" name="idCustomer" hidden>
+                    <div class="form-group">
+                        <label for="exampleInputEmail">Type</label>
+                        <select th:field="*{questionType}">
+                            <option th:each="c:${questionTypes}"
+                                    th:value="${c.id}" th:text="${c.name}">
+                            </option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input type="text" th:field="*{title}" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>question</label>
+                        <input type="text" class="form-control" th:field="*{question}">
+                    </div>
+                    <div class="form-group">
+                        <label>Answer</label>
+                        <input type="text" class="form-control" th:field="*{answer}">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 ">
+                            <a href="/question/list" class="btn btn-primary">Back to menu</a>
+                        </div>
+                        <div class="col-md-6 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
