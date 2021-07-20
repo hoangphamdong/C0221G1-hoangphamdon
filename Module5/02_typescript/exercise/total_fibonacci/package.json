@@ -1,0 +1,7 @@
+{
+  "name": "total_fibonacci",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}

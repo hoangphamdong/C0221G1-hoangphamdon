@@ -1,0 +1,7 @@
+{
+  "name": "03_check_prime",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^4.3.5"
+  }
+}
